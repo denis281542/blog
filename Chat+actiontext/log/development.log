@@ -1,0 +1,2231 @@
+Started GET "/" for ::1 at 2019-10-18 16:34:33 +0500
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /var/lib/gems/2.5.0/gems/railties-6.0.0/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /var/lib/gems/2.5.0/gems/railties-6.0.0/lib/rails/templates/rails/welcome/index.html.erb (Duration: 8.0ms | Allocations: 463)
+Completed 200 OK in 18ms (Views: 11.4ms | ActiveRecord: 0.0ms | Allocations: 2604)
+
+
+Started GET "/" for ::1 at 2019-10-18 16:37:19 +0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by LandingController#index as HTML
+  Rendering landing/index.html.erb within layouts/application
+  Rendered landing/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 95)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 8286ms (Views: 8284.4ms | ActiveRecord: 0.0ms | Allocations: 1460904)
+
+
+Started GET "/" for ::1 at 2019-10-18 16:38:50 +0500
+Processing by LandingController#index as HTML
+  Rendering landing/index.html.erb within layouts/application
+  Rendered landing/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 5)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 3274ms (Views: 3273.0ms | ActiveRecord: 0.0ms | Allocations: 4827)
+
+
+Started GET "/" for ::1 at 2019-10-18 16:41:58 +0500
+Processing by LandingController#index as HTML
+  Rendering landing/index.html.erb within layouts/application
+  Rendered landing/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 5)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 3383ms (Views: 3382.4ms | ActiveRecord: 0.0ms | Allocations: 4806)
+
+
+Started GET "/" for ::1 at 2019-10-18 16:42:59 +0500
+Processing by LandingController#index as HTML
+  Rendering landing/index.html.erb within layouts/application
+  Rendered landing/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 5)
+[Webpacker] Compiling…
+[Webpacker] Compiled all packs in /home/denis/ruby/RealTimeChat/public/packs
+Completed 200 OK in 3364ms (Views: 3362.6ms | ActiveRecord: 0.0ms | Allocations: 5845)
+
+
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (6.9ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (5.2ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateMessages (20191018115239)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE TABLE "messages" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "content" text, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mprimary::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20191018115239"]]
+  [1m[35m (5.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.3ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2019-10-18 11:54:15.390514"], ["updated_at", "2019-10-18 11:54:15.390514"]]
+  [1m[35m (4.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/" for ::1 at 2019-10-18 16:59:08 +0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by LandingController#index as HTML
+  Rendering landing/index.html.erb within layouts/application
+  Rendered landing/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 4)
+[Webpacker] Compiling…
+[Webpacker] Compiled all packs in /home/denis/ruby/RealTimeChat/public/packs
+Completed 200 OK in 3954ms (Views: 3953.4ms | ActiveRecord: 0.0ms | Allocations: 10564)
+
+
+Started GET "/cable" for ::1 at 2019-10-18 16:59:12 +0500
+Started GET "/cable/" [WebSocket] for ::1 at 2019-10-18 16:59:12 +0500
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+RoomChannel is transmitting the subscription confirmation
+Started GET "/" for ::1 at 2019-10-18 17:06:09 +0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by LandingController#index as HTML
+  Rendering landing/index.html.erb within layouts/application
+  Rendered landing/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 4)
+Completed 200 OK in 15ms (Views: 14.5ms | ActiveRecord: 0.0ms | Allocations: 5802)
+
+
+Started GET "/cable" for ::1 at 2019-10-18 17:06:09 +0500
+Started GET "/cable/" [WebSocket] for ::1 at 2019-10-18 17:06:09 +0500
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+RoomChannel is transmitting the subscription confirmation
+RoomChannel is streaming from room_channel
+Started GET "/" for ::1 at 2019-10-18 17:06:36 +0500
+Processing by LandingController#index as HTML
+  Rendering landing/index.html.erb within layouts/application
+  Rendered landing/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 4)
+Completed 200 OK in 7ms (Views: 6.2ms | ActiveRecord: 0.0ms | Allocations: 5654)
+
+
+Finished "/cable/" [WebSocket] for ::1 at 2019-10-18 17:06:36 +0500
+RoomChannel stopped streaming from room_channel
+Started GET "/cable" for ::1 at 2019-10-18 17:06:36 +0500
+Started GET "/cable/" [WebSocket] for ::1 at 2019-10-18 17:06:36 +0500
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+RoomChannel is transmitting the subscription confirmation
+RoomChannel is streaming from room_channel
+Started GET "/" for ::1 at 2019-10-18 17:09:32 +0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by LandingController#index as HTML
+  Rendering landing/index.html.erb within layouts/application
+  Rendered landing/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 4)
+[Webpacker] Compiling…
+[Webpacker] Compiled all packs in /home/denis/ruby/RealTimeChat/public/packs
+Completed 200 OK in 3456ms (Views: 3455.4ms | ActiveRecord: 0.0ms | Allocations: 7556)
+
+
+Started GET "/cable" for ::1 at 2019-10-18 17:09:36 +0500
+Started GET "/cable/" [WebSocket] for ::1 at 2019-10-18 17:09:36 +0500
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+RoomChannel is transmitting the subscription confirmation
+RoomChannel is streaming from room_channel
+Finished "/cable/" [WebSocket] for ::1 at 2019-10-18 17:18:35 +0500
+RoomChannel stopped streaming from room_channel
+Started GET "/cable" for ::1 at 2019-10-18 17:18:35 +0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Started GET "/cable/" [WebSocket] for ::1 at 2019-10-18 17:18:35 +0500
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+RoomChannel is transmitting the subscription confirmation
+RoomChannel is streaming from room_channel
+Started GET "/" for ::1 at 2019-10-18 17:21:13 +0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by LandingController#index as HTML
+  Rendering landing/index.html.erb within layouts/application
+  Rendered landing/index.html.erb within layouts/application (Duration: 13.8ms | Allocations: 3944)
+Completed 200 OK in 38ms (Views: 28.1ms | ActiveRecord: 1.4ms | Allocations: 14259)
+
+
+Started GET "/cable" for ::1 at 2019-10-18 17:21:13 +0500
+Started GET "/cable/" [WebSocket] for ::1 at 2019-10-18 17:21:13 +0500
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+RoomChannel is transmitting the subscription confirmation
+RoomChannel is streaming from room_channel
+Started GET "/" for ::1 at 2019-10-18 17:21:16 +0500
+Processing by LandingController#index as HTML
+  Rendering landing/index.html.erb within layouts/application
+  Rendered landing/index.html.erb within layouts/application (Duration: 3.8ms | Allocations: 341)
+Completed 200 OK in 40ms (Views: 37.0ms | ActiveRecord: 0.0ms | Allocations: 6006)
+
+
+Finished "/cable/" [WebSocket] for ::1 at 2019-10-18 17:21:16 +0500
+RoomChannel stopped streaming from room_channel
+Started GET "/cable" for ::1 at 2019-10-18 17:21:16 +0500
+Started GET "/cable/" [WebSocket] for ::1 at 2019-10-18 17:21:16 +0500
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+RoomChannel is transmitting the subscription confirmation
+RoomChannel is streaming from room_channel
+Started POST "/messages" for ::1 at 2019-10-18 17:21:18 +0500
+Processing by MessagesController#create as JS
+  Parameters: {"message"=>{"content"=>"n"}, "commit"=>"Create Message"}
+  [1m[35m (0.3ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+  [1m[36mMessage Create (1.3ms)[0m  [1m[32mINSERT INTO "messages" ("content", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["content", "n"], ["created_at", "2019-10-18 12:21:18.828682"], ["updated_at", "2019-10-18 12:21:18.828682"]]
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+  [1m[35m (6.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+Completed 500 Internal Server Error in 30ms (ActiveRecord: 8.1ms | Allocations: 4465)
+
+
+  
+NoMethodError (undefined method `save' for nil:NilClass):
+  
+app/controllers/messages_controller.rb:8:in `create'
+Started POST "/messages" for ::1 at 2019-10-18 17:21:21 +0500
+Processing by MessagesController#create as JS
+  Parameters: {"message"=>{"content"=>"n"}, "commit"=>"Create Message"}
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+  [1m[36mMessage Create (0.6ms)[0m  [1m[32mINSERT INTO "messages" ("content", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["content", "n"], ["created_at", "2019-10-18 12:21:21.319046"], ["updated_at", "2019-10-18 12:21:21.319046"]]
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+  [1m[35m (6.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+Completed 500 Internal Server Error in 21ms (ActiveRecord: 7.4ms | Allocations: 4300)
+
+
+  
+NoMethodError (undefined method `save' for nil:NilClass):
+  
+app/controllers/messages_controller.rb:8:in `create'
+Started POST "/messages" for ::1 at 2019-10-18 17:21:21 +0500
+Processing by MessagesController#create as JS
+  Parameters: {"message"=>{"content"=>"n"}, "commit"=>"Create Message"}
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+  [1m[36mMessage Create (1.6ms)[0m  [1m[32mINSERT INTO "messages" ("content", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["content", "n"], ["created_at", "2019-10-18 12:21:21.990803"], ["updated_at", "2019-10-18 12:21:21.990803"]]
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+  [1m[35m (6.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+Completed 500 Internal Server Error in 28ms (ActiveRecord: 8.7ms | Allocations: 4245)
+
+
+  
+NoMethodError (undefined method `save' for nil:NilClass):
+  
+app/controllers/messages_controller.rb:8:in `create'
+Started POST "/messages" for ::1 at 2019-10-18 17:21:22 +0500
+Processing by MessagesController#create as JS
+  Parameters: {"message"=>{"content"=>"n"}, "commit"=>"Create Message"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+  [1m[36mMessage Create (0.3ms)[0m  [1m[32mINSERT INTO "messages" ("content", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["content", "n"], ["created_at", "2019-10-18 12:21:22.153246"], ["updated_at", "2019-10-18 12:21:22.153246"]]
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+  [1m[35m (3.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+Completed 500 Internal Server Error in 14ms (ActiveRecord: 4.3ms | Allocations: 4239)
+
+
+  
+NoMethodError (undefined method `save' for nil:NilClass):
+  
+app/controllers/messages_controller.rb:8:in `create'
+Started POST "/messages" for ::1 at 2019-10-18 17:21:22 +0500
+Processing by MessagesController#create as JS
+  Parameters: {"message"=>{"content"=>"n"}, "commit"=>"Create Message"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+  [1m[36mMessage Create (0.3ms)[0m  [1m[32mINSERT INTO "messages" ("content", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["content", "n"], ["created_at", "2019-10-18 12:21:22.338393"], ["updated_at", "2019-10-18 12:21:22.338393"]]
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+  [1m[35m (5.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+Completed 500 Internal Server Error in 14ms (ActiveRecord: 5.7ms | Allocations: 4239)
+
+
+  
+NoMethodError (undefined method `save' for nil:NilClass):
+  
+app/controllers/messages_controller.rb:8:in `create'
+Started POST "/messages" for ::1 at 2019-10-18 17:22:09 +0500
+Processing by MessagesController#create as JS
+  Parameters: {"message"=>{"content"=>"n"}, "commit"=>"Create Message"}
+  [1m[35m (0.3ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+  [1m[36mMessage Create (3.1ms)[0m  [1m[32mINSERT INTO "messages" ("content", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["content", "n"], ["created_at", "2019-10-18 12:22:09.067862"], ["updated_at", "2019-10-18 12:22:09.067862"]]
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+  [1m[35m (7.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+Completed 500 Internal Server Error in 35ms (ActiveRecord: 10.5ms | Allocations: 4245)
+
+
+  
+NoMethodError (undefined method `save' for nil:NilClass):
+  
+app/controllers/messages_controller.rb:8:in `create'
+Started POST "/messages" for ::1 at 2019-10-18 17:22:10 +0500
+Processing by MessagesController#create as JS
+  Parameters: {"message"=>{"content"=>"n"}, "commit"=>"Create Message"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+  [1m[36mMessage Create (0.7ms)[0m  [1m[32mINSERT INTO "messages" ("content", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["content", "n"], ["created_at", "2019-10-18 12:22:10.070429"], ["updated_at", "2019-10-18 12:22:10.070429"]]
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+  [1m[35m (6.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+Completed 500 Internal Server Error in 14ms (ActiveRecord: 7.1ms | Allocations: 4239)
+
+
+  
+NoMethodError (undefined method `save' for nil:NilClass):
+  
+app/controllers/messages_controller.rb:8:in `create'
+Started POST "/messages" for ::1 at 2019-10-18 17:22:10 +0500
+Processing by MessagesController#create as JS
+  Parameters: {"message"=>{"content"=>"n"}, "commit"=>"Create Message"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+  [1m[36mMessage Create (1.7ms)[0m  [1m[32mINSERT INTO "messages" ("content", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["content", "n"], ["created_at", "2019-10-18 12:22:10.231936"], ["updated_at", "2019-10-18 12:22:10.231936"]]
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+  [1m[35m (4.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+Completed 500 Internal Server Error in 15ms (ActiveRecord: 5.9ms | Allocations: 3491)
+
+
+  
+NoMethodError (undefined method `save' for nil:NilClass):
+  
+app/controllers/messages_controller.rb:8:in `create'
+Started POST "/messages" for ::1 at 2019-10-18 17:22:11 +0500
+Processing by MessagesController#create as JS
+  Parameters: {"message"=>{"content"=>"n"}, "commit"=>"Create Message"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+  [1m[36mMessage Create (2.7ms)[0m  [1m[32mINSERT INTO "messages" ("content", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["content", "n"], ["created_at", "2019-10-18 12:22:11.737076"], ["updated_at", "2019-10-18 12:22:11.737076"]]
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+  [1m[35m (6.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+Completed 500 Internal Server Error in 18ms (ActiveRecord: 9.0ms | Allocations: 4239)
+
+
+  
+NoMethodError (undefined method `save' for nil:NilClass):
+  
+app/controllers/messages_controller.rb:8:in `create'
+Started POST "/messages" for ::1 at 2019-10-18 17:22:11 +0500
+Processing by MessagesController#create as JS
+  Parameters: {"message"=>{"content"=>"n"}, "commit"=>"Create Message"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+  [1m[36mMessage Create (0.3ms)[0m  [1m[32mINSERT INTO "messages" ("content", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["content", "n"], ["created_at", "2019-10-18 12:22:11.903945"], ["updated_at", "2019-10-18 12:22:11.903945"]]
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+  [1m[35m (4.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 5.1ms | Allocations: 4239)
+
+
+  
+NoMethodError (undefined method `save' for nil:NilClass):
+  
+app/controllers/messages_controller.rb:8:in `create'
+Started POST "/messages" for ::1 at 2019-10-18 17:22:12 +0500
+Processing by MessagesController#create as JS
+  Parameters: {"message"=>{"content"=>"n"}, "commit"=>"Create Message"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+  [1m[36mMessage Create (0.3ms)[0m  [1m[32mINSERT INTO "messages" ("content", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["content", "n"], ["created_at", "2019-10-18 12:22:12.069248"], ["updated_at", "2019-10-18 12:22:12.069248"]]
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+  [1m[35m (4.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 4.4ms | Allocations: 3486)
+
+
+  
+NoMethodError (undefined method `save' for nil:NilClass):
+  
+app/controllers/messages_controller.rb:8:in `create'
+Started POST "/messages" for ::1 at 2019-10-18 17:22:12 +0500
+Processing by MessagesController#create as JS
+  Parameters: {"message"=>{"content"=>"n"}, "commit"=>"Create Message"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+  [1m[36mMessage Create (0.3ms)[0m  [1m[32mINSERT INTO "messages" ("content", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["content", "n"], ["created_at", "2019-10-18 12:22:12.236761"], ["updated_at", "2019-10-18 12:22:12.236761"]]
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+  [1m[35m (4.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 4.6ms | Allocations: 4239)
+
+
+  
+NoMethodError (undefined method `save' for nil:NilClass):
+  
+app/controllers/messages_controller.rb:8:in `create'
+Started POST "/messages" for ::1 at 2019-10-18 17:22:12 +0500
+Processing by MessagesController#create as JS
+  Parameters: {"message"=>{"content"=>"n"}, "commit"=>"Create Message"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+  [1m[36mMessage Create (0.5ms)[0m  [1m[32mINSERT INTO "messages" ("content", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["content", "n"], ["created_at", "2019-10-18 12:22:12.408516"], ["updated_at", "2019-10-18 12:22:12.408516"]]
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+  [1m[35m (4.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+Completed 500 Internal Server Error in 16ms (ActiveRecord: 5.3ms | Allocations: 4239)
+
+
+  
+NoMethodError (undefined method `save' for nil:NilClass):
+  
+app/controllers/messages_controller.rb:8:in `create'
+Started POST "/messages" for ::1 at 2019-10-18 17:22:29 +0500
+Processing by MessagesController#create as JS
+  Parameters: {"message"=>{"content"=>"n"}, "commit"=>"Create Message"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+  [1m[36mMessage Create (1.8ms)[0m  [1m[32mINSERT INTO "messages" ("content", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["content", "n"], ["created_at", "2019-10-18 12:22:29.278978"], ["updated_at", "2019-10-18 12:22:29.278978"]]
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+  [1m[35m (6.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+Completed 500 Internal Server Error in 17ms (ActiveRecord: 8.0ms | Allocations: 4239)
+
+
+  
+NoMethodError (undefined method `save' for nil:NilClass):
+  
+app/controllers/messages_controller.rb:8:in `create'
+Started POST "/messages" for ::1 at 2019-10-18 17:24:05 +0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by MessagesController#create as JS
+  Parameters: {"message"=>{"content"=>"n"}, "commit"=>"Create Message"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+  [1m[36mMessage Create (0.5ms)[0m  [1m[32mINSERT INTO "messages" ("content", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["content", "n"], ["created_at", "2019-10-18 12:24:05.191356"], ["updated_at", "2019-10-18 12:24:05.191356"]]
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+  [1m[35m (5.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+Completed 500 Internal Server Error in 18ms (ActiveRecord: 6.7ms | Allocations: 7589)
+
+
+  
+NoMethodError (undefined method `save' for nil:NilClass):
+  
+app/controllers/messages_controller.rb:8:in `create'
+Started POST "/messages" for ::1 at 2019-10-18 17:24:06 +0500
+Processing by MessagesController#create as JS
+  Parameters: {"message"=>{"content"=>"n"}, "commit"=>"Create Message"}
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+  [1m[36mMessage Create (2.7ms)[0m  [1m[32mINSERT INTO "messages" ("content", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["content", "n"], ["created_at", "2019-10-18 12:24:06.213217"], ["updated_at", "2019-10-18 12:24:06.213217"]]
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+  [1m[35m (6.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+Completed 500 Internal Server Error in 24ms (ActiveRecord: 9.6ms | Allocations: 4239)
+
+
+  
+NoMethodError (undefined method `save' for nil:NilClass):
+  
+app/controllers/messages_controller.rb:8:in `create'
+Started POST "/messages" for ::1 at 2019-10-18 17:24:06 +0500
+Processing by MessagesController#create as JS
+  Parameters: {"message"=>{"content"=>"n"}, "commit"=>"Create Message"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+  [1m[36mMessage Create (0.3ms)[0m  [1m[32mINSERT INTO "messages" ("content", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["content", "n"], ["created_at", "2019-10-18 12:24:06.375771"], ["updated_at", "2019-10-18 12:24:06.375771"]]
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+  [1m[35m (4.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+Completed 500 Internal Server Error in 17ms (ActiveRecord: 4.6ms | Allocations: 4239)
+
+
+  
+NoMethodError (undefined method `save' for nil:NilClass):
+  
+app/controllers/messages_controller.rb:8:in `create'
+Started POST "/messages" for ::1 at 2019-10-18 17:24:06 +0500
+Processing by MessagesController#create as JS
+  Parameters: {"message"=>{"content"=>"n"}, "commit"=>"Create Message"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+  [1m[36mMessage Create (0.3ms)[0m  [1m[32mINSERT INTO "messages" ("content", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["content", "n"], ["created_at", "2019-10-18 12:24:06.546169"], ["updated_at", "2019-10-18 12:24:06.546169"]]
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+  [1m[35m (4.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 4.5ms | Allocations: 4239)
+
+
+  
+NoMethodError (undefined method `save' for nil:NilClass):
+  
+app/controllers/messages_controller.rb:8:in `create'
+Started POST "/messages" for ::1 at 2019-10-18 17:24:06 +0500
+Processing by MessagesController#create as JS
+  Parameters: {"message"=>{"content"=>"n"}, "commit"=>"Create Message"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+  [1m[36mMessage Create (1.0ms)[0m  [1m[32mINSERT INTO "messages" ("content", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["content", "n"], ["created_at", "2019-10-18 12:24:06.728315"], ["updated_at", "2019-10-18 12:24:06.728315"]]
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+  [1m[35m (4.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+Completed 500 Internal Server Error in 14ms (ActiveRecord: 5.3ms | Allocations: 4239)
+
+
+  
+NoMethodError (undefined method `save' for nil:NilClass):
+  
+app/controllers/messages_controller.rb:8:in `create'
+Started POST "/messages" for ::1 at 2019-10-18 17:24:06 +0500
+Processing by MessagesController#create as JS
+  Parameters: {"message"=>{"content"=>"n"}, "commit"=>"Create Message"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+  [1m[36mMessage Create (0.5ms)[0m  [1m[32mINSERT INTO "messages" ("content", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["content", "n"], ["created_at", "2019-10-18 12:24:06.927125"], ["updated_at", "2019-10-18 12:24:06.927125"]]
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+  [1m[35m (4.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+Completed 500 Internal Server Error in 18ms (ActiveRecord: 5.4ms | Allocations: 4234)
+
+
+  
+NoMethodError (undefined method `save' for nil:NilClass):
+  
+app/controllers/messages_controller.rb:8:in `create'
+Started POST "/messages" for ::1 at 2019-10-18 17:24:07 +0500
+Processing by MessagesController#create as JS
+  Parameters: {"message"=>{"content"=>"n"}, "commit"=>"Create Message"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+  [1m[36mMessage Create (0.8ms)[0m  [1m[32mINSERT INTO "messages" ("content", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["content", "n"], ["created_at", "2019-10-18 12:24:07.107543"], ["updated_at", "2019-10-18 12:24:07.107543"]]
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+  [1m[35m (3.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 4.7ms | Allocations: 4239)
+
+
+  
+NoMethodError (undefined method `save' for nil:NilClass):
+  
+app/controllers/messages_controller.rb:8:in `create'
+Started POST "/messages" for ::1 at 2019-10-18 17:24:07 +0500
+Processing by MessagesController#create as JS
+  Parameters: {"message"=>{"content"=>"n"}, "commit"=>"Create Message"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+  [1m[36mMessage Create (0.4ms)[0m  [1m[32mINSERT INTO "messages" ("content", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["content", "n"], ["created_at", "2019-10-18 12:24:07.277533"], ["updated_at", "2019-10-18 12:24:07.277533"]]
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+  [1m[35m (5.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+Completed 500 Internal Server Error in 15ms (ActiveRecord: 5.6ms | Allocations: 4239)
+
+
+  
+NoMethodError (undefined method `save' for nil:NilClass):
+  
+app/controllers/messages_controller.rb:8:in `create'
+Started POST "/messages" for ::1 at 2019-10-18 17:24:07 +0500
+Processing by MessagesController#create as JS
+  Parameters: {"message"=>{"content"=>"n"}, "commit"=>"Create Message"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+  [1m[36mMessage Create (0.7ms)[0m  [1m[32mINSERT INTO "messages" ("content", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["content", "n"], ["created_at", "2019-10-18 12:24:07.489101"], ["updated_at", "2019-10-18 12:24:07.489101"]]
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+  [1m[35m (4.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+Completed 500 Internal Server Error in 20ms (ActiveRecord: 5.6ms | Allocations: 4239)
+
+
+  
+NoMethodError (undefined method `save' for nil:NilClass):
+  
+app/controllers/messages_controller.rb:8:in `create'
+Started POST "/messages" for ::1 at 2019-10-18 17:24:11 +0500
+Processing by MessagesController#create as JS
+  Parameters: {"message"=>{"content"=>"n"}, "commit"=>"Create Message"}
+  [1m[35m (0.3ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+  [1m[36mMessage Create (1.1ms)[0m  [1m[32mINSERT INTO "messages" ("content", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["content", "n"], ["created_at", "2019-10-18 12:24:11.509023"], ["updated_at", "2019-10-18 12:24:11.509023"]]
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+  [1m[35m (7.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+Completed 500 Internal Server Error in 33ms (ActiveRecord: 8.5ms | Allocations: 4234)
+
+
+  
+NoMethodError (undefined method `save' for nil:NilClass):
+  
+app/controllers/messages_controller.rb:8:in `create'
+Started POST "/messages" for ::1 at 2019-10-18 17:24:11 +0500
+Processing by MessagesController#create as JS
+  Parameters: {"message"=>{"content"=>"n"}, "commit"=>"Create Message"}
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+  [1m[36mMessage Create (1.0ms)[0m  [1m[32mINSERT INTO "messages" ("content", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["content", "n"], ["created_at", "2019-10-18 12:24:12.000872"], ["updated_at", "2019-10-18 12:24:12.000872"]]
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+  [1m[35m (5.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+Completed 500 Internal Server Error in 22ms (ActiveRecord: 7.2ms | Allocations: 4239)
+
+
+  
+NoMethodError (undefined method `save' for nil:NilClass):
+  
+app/controllers/messages_controller.rb:8:in `create'
+Started POST "/messages" for ::1 at 2019-10-18 17:24:12 +0500
+Processing by MessagesController#create as JS
+  Parameters: {"message"=>{"content"=>"n"}, "commit"=>"Create Message"}
+  [1m[35m (0.3ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+  [1m[36mMessage Create (1.0ms)[0m  [1m[32mINSERT INTO "messages" ("content", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["content", "n"], ["created_at", "2019-10-18 12:24:12.363536"], ["updated_at", "2019-10-18 12:24:12.363536"]]
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+  [1m[35m (5.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+Completed 500 Internal Server Error in 27ms (ActiveRecord: 7.0ms | Allocations: 4250)
+
+
+  
+NoMethodError (undefined method `save' for nil:NilClass):
+  
+app/controllers/messages_controller.rb:8:in `create'
+Started POST "/messages" for ::1 at 2019-10-18 17:24:12 +0500
+Processing by MessagesController#create as JS
+  Parameters: {"message"=>{"content"=>"n"}, "commit"=>"Create Message"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+  [1m[36mMessage Create (0.7ms)[0m  [1m[32mINSERT INTO "messages" ("content", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["content", "n"], ["created_at", "2019-10-18 12:24:12.513075"], ["updated_at", "2019-10-18 12:24:12.513075"]]
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+  [1m[35m (4.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+Completed 500 Internal Server Error in 21ms (ActiveRecord: 4.9ms | Allocations: 4239)
+
+
+  
+NoMethodError (undefined method `save' for nil:NilClass):
+  
+app/controllers/messages_controller.rb:8:in `create'
+Started POST "/messages" for ::1 at 2019-10-18 17:24:12 +0500
+Processing by MessagesController#create as JS
+  Parameters: {"message"=>{"content"=>"n"}, "commit"=>"Create Message"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+  [1m[36mMessage Create (0.3ms)[0m  [1m[32mINSERT INTO "messages" ("content", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["content", "n"], ["created_at", "2019-10-18 12:24:12.697674"], ["updated_at", "2019-10-18 12:24:12.697674"]]
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+  [1m[35m (3.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 4.2ms | Allocations: 4239)
+
+
+  
+NoMethodError (undefined method `save' for nil:NilClass):
+  
+app/controllers/messages_controller.rb:8:in `create'
+Started POST "/messages" for ::1 at 2019-10-18 17:24:12 +0500
+Processing by MessagesController#create as JS
+  Parameters: {"message"=>{"content"=>"n"}, "commit"=>"Create Message"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+  [1m[36mMessage Create (0.2ms)[0m  [1m[32mINSERT INTO "messages" ("content", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["content", "n"], ["created_at", "2019-10-18 12:24:12.868527"], ["updated_at", "2019-10-18 12:24:12.868527"]]
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+  [1m[35m (3.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 3.9ms | Allocations: 4235)
+
+
+  
+NoMethodError (undefined method `save' for nil:NilClass):
+  
+app/controllers/messages_controller.rb:8:in `create'
+Started POST "/messages" for ::1 at 2019-10-18 17:24:13 +0500
+Processing by MessagesController#create as JS
+  Parameters: {"message"=>{"content"=>"n"}, "commit"=>"Create Message"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+  [1m[36mMessage Create (0.9ms)[0m  [1m[32mINSERT INTO "messages" ("content", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["content", "n"], ["created_at", "2019-10-18 12:24:13.984540"], ["updated_at", "2019-10-18 12:24:13.984540"]]
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+  [1m[35m (5.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+Completed 500 Internal Server Error in 14ms (ActiveRecord: 6.7ms | Allocations: 4239)
+
+
+  
+NoMethodError (undefined method `save' for nil:NilClass):
+  
+app/controllers/messages_controller.rb:8:in `create'
+Started GET "/cable" for ::1 at 2019-10-18 17:24:14 +0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Started GET "/cable/" [WebSocket] for ::1 at 2019-10-18 17:24:14 +0500
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+RoomChannel is transmitting the subscription confirmation
+RoomChannel is streaming from room_channel
+Started POST "/messages" for ::1 at 2019-10-18 17:24:14 +0500
+Processing by MessagesController#create as JS
+  Parameters: {"message"=>{"content"=>"n"}, "commit"=>"Create Message"}
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+  [1m[36mMessage Create (2.4ms)[0m  [1m[32mINSERT INTO "messages" ("content", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["content", "n"], ["created_at", "2019-10-18 12:24:14.147177"], ["updated_at", "2019-10-18 12:24:14.147177"]]
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+  [1m[35m (4.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+Completed 500 Internal Server Error in 19ms (ActiveRecord: 7.1ms | Allocations: 4239)
+
+
+  
+NoMethodError (undefined method `save' for nil:NilClass):
+  
+app/controllers/messages_controller.rb:8:in `create'
+Started POST "/messages" for ::1 at 2019-10-18 17:24:14 +0500
+Processing by MessagesController#create as JS
+  Parameters: {"message"=>{"content"=>"n"}, "commit"=>"Create Message"}
+  [1m[35m (0.3ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+  [1m[36mMessage Create (4.6ms)[0m  [1m[32mINSERT INTO "messages" ("content", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["content", "n"], ["created_at", "2019-10-18 12:24:14.383869"], ["updated_at", "2019-10-18 12:24:14.383869"]]
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+  [1m[35m (4.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+Completed 500 Internal Server Error in 27ms (ActiveRecord: 9.4ms | Allocations: 3486)
+
+
+  
+NoMethodError (undefined method `save' for nil:NilClass):
+  
+app/controllers/messages_controller.rb:8:in `create'
+Started POST "/messages" for ::1 at 2019-10-18 17:24:19 +0500
+Processing by MessagesController#create as JS
+  Parameters: {"message"=>{"content"=>"n"}, "commit"=>"Create Message"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+  [1m[36mMessage Create (1.7ms)[0m  [1m[32mINSERT INTO "messages" ("content", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["content", "n"], ["created_at", "2019-10-18 12:24:19.429165"], ["updated_at", "2019-10-18 12:24:19.429165"]]
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+  [1m[35m (5.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+Completed 500 Internal Server Error in 20ms (ActiveRecord: 6.9ms | Allocations: 4234)
+
+
+  
+NoMethodError (undefined method `save' for nil:NilClass):
+  
+app/controllers/messages_controller.rb:8:in `create'
+Started POST "/messages" for ::1 at 2019-10-18 17:24:19 +0500
+Processing by MessagesController#create as JS
+  Parameters: {"message"=>{"content"=>"n"}, "commit"=>"Create Message"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+  [1m[36mMessage Create (0.8ms)[0m  [1m[32mINSERT INTO "messages" ("content", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["content", "n"], ["created_at", "2019-10-18 12:24:19.583151"], ["updated_at", "2019-10-18 12:24:19.583151"]]
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+  [1m[35m (11.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+Completed 500 Internal Server Error in 20ms (ActiveRecord: 12.0ms | Allocations: 4234)
+
+
+  
+NoMethodError (undefined method `save' for nil:NilClass):
+  
+app/controllers/messages_controller.rb:8:in `create'
+Started POST "/messages" for ::1 at 2019-10-18 17:24:19 +0500
+Processing by MessagesController#create as JS
+  Parameters: {"message"=>{"content"=>"n"}, "commit"=>"Create Message"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+  [1m[36mMessage Create (0.7ms)[0m  [1m[32mINSERT INTO "messages" ("content", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["content", "n"], ["created_at", "2019-10-18 12:24:19.748381"], ["updated_at", "2019-10-18 12:24:19.748381"]]
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+  [1m[35m (3.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 4.6ms | Allocations: 4239)
+
+
+  
+NoMethodError (undefined method `save' for nil:NilClass):
+  
+app/controllers/messages_controller.rb:8:in `create'
+Started POST "/messages" for ::1 at 2019-10-18 17:24:19 +0500
+Processing by MessagesController#create as JS
+  Parameters: {"message"=>{"content"=>"n"}, "commit"=>"Create Message"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+  [1m[36mMessage Create (0.3ms)[0m  [1m[32mINSERT INTO "messages" ("content", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["content", "n"], ["created_at", "2019-10-18 12:24:19.935553"], ["updated_at", "2019-10-18 12:24:19.935553"]]
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+  [1m[35m (3.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+Completed 500 Internal Server Error in 16ms (ActiveRecord: 4.3ms | Allocations: 4240)
+
+
+  
+NoMethodError (undefined method `save' for nil:NilClass):
+  
+app/controllers/messages_controller.rb:8:in `create'
+Started GET "/" for ::1 at 2019-10-18 17:25:06 +0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by LandingController#index as HTML
+  Rendering landing/index.html.erb within layouts/application
+  Rendered landing/index.html.erb within layouts/application (Duration: 1.6ms | Allocations: 413)
+Completed 200 OK in 17ms (Views: 9.4ms | ActiveRecord: 1.5ms | Allocations: 9528)
+
+
+Started GET "/cable" for ::1 at 2019-10-18 17:25:07 +0500
+Started GET "/cable/" [WebSocket] for ::1 at 2019-10-18 17:25:07 +0500
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+RoomChannel is transmitting the subscription confirmation
+RoomChannel is streaming from room_channel
+Started POST "/messages" for ::1 at 2019-10-18 17:25:08 +0500
+Processing by MessagesController#create as JS
+  Parameters: {"message"=>{"content"=>""}, "commit"=>"Create Message"}
+  [1m[35m (0.3ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+  [1m[36mMessage Create (0.9ms)[0m  [1m[32mINSERT INTO "messages" ("content", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["content", ""], ["created_at", "2019-10-18 12:25:08.079773"], ["updated_at", "2019-10-18 12:25:08.079773"]]
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+  [1m[35m (8.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+[ActionCable] Broadcasting to room_channel: {:content=>""}
+RoomChannel transmitting {"content"=>""} (via streamed from room_channel)
+No template found for MessagesController#create, rendering head :no_content
+Completed 204 No Content in 47ms (ActiveRecord: 9.5ms | Allocations: 5654)
+
+
+Started POST "/messages" for ::1 at 2019-10-18 17:25:10 +0500
+Processing by MessagesController#create as JS
+  Parameters: {"message"=>{"content"=>"c"}, "commit"=>"Create Message"}
+  [1m[35m (0.4ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+  [1m[36mMessage Create (2.5ms)[0m  [1m[32mINSERT INTO "messages" ("content", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["content", "c"], ["created_at", "2019-10-18 12:25:10.223866"], ["updated_at", "2019-10-18 12:25:10.223866"]]
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+  [1m[35m (6.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+[ActionCable] Broadcasting to room_channel: {:content=>"c"}
+No template found for MessagesController#create, rendering head :no_content
+RoomChannel transmitting {"content"=>"c"} (via streamed from room_channel)
+Completed 204 No Content in 27ms (ActiveRecord: 9.3ms | Allocations: 3946)
+
+
+Started POST "/messages" for ::1 at 2019-10-18 17:25:11 +0500
+Processing by MessagesController#create as JS
+  Parameters: {"message"=>{"content"=>"c"}, "commit"=>"Create Message"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+  [1m[36mMessage Create (2.7ms)[0m  [1m[32mINSERT INTO "messages" ("content", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["content", "c"], ["created_at", "2019-10-18 12:25:11.361280"], ["updated_at", "2019-10-18 12:25:11.361280"]]
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+  [1m[35m (4.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+[ActionCable] Broadcasting to room_channel: {:content=>"c"}
+No template found for MessagesController#create, rendering head :no_content
+RoomChannel transmitting {"content"=>"c"} (via streamed from room_channel)
+Completed 204 No Content in 25ms (ActiveRecord: 7.2ms | Allocations: 3948)
+
+
+Started POST "/messages" for ::1 at 2019-10-18 17:25:11 +0500
+Processing by MessagesController#create as JS
+  Parameters: {"message"=>{"content"=>"c"}, "commit"=>"Create Message"}
+  [1m[35m (0.3ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+  [1m[36mMessage Create (2.1ms)[0m  [1m[32mINSERT INTO "messages" ("content", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["content", "c"], ["created_at", "2019-10-18 12:25:11.544358"], ["updated_at", "2019-10-18 12:25:11.544358"]]
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+  [1m[35m (5.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+[ActionCable] Broadcasting to room_channel: {:content=>"c"}
+No template found for MessagesController#create, rendering head :no_content
+RoomChannel transmitting {"content"=>"c"} (via streamed from room_channel)
+Completed 204 No Content in 43ms (ActiveRecord: 8.0ms | Allocations: 3943)
+
+
+Started POST "/messages" for ::1 at 2019-10-18 17:25:11 +0500
+Processing by MessagesController#create as JS
+  Parameters: {"message"=>{"content"=>"c"}, "commit"=>"Create Message"}
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+  [1m[36mMessage Create (1.2ms)[0m  [1m[32mINSERT INTO "messages" ("content", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["content", "c"], ["created_at", "2019-10-18 12:25:11.744929"], ["updated_at", "2019-10-18 12:25:11.744929"]]
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+  [1m[35m (4.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+[ActionCable] Broadcasting to room_channel: {:content=>"c"}
+No template found for MessagesController#create, rendering head :no_content
+Completed 204 No Content in 35ms (ActiveRecord: 6.2ms | Allocations: 3803)
+
+
+RoomChannel transmitting {"content"=>"c"} (via streamed from room_channel)
+Started POST "/messages" for ::1 at 2019-10-18 17:25:12 +0500
+Processing by MessagesController#create as JS
+  Parameters: {"message"=>{"content"=>"c"}, "commit"=>"Create Message"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+  [1m[36mMessage Create (0.4ms)[0m  [1m[32mINSERT INTO "messages" ("content", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["content", "c"], ["created_at", "2019-10-18 12:25:12.525896"], ["updated_at", "2019-10-18 12:25:12.525896"]]
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+  [1m[35m (6.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+[ActionCable] Broadcasting to room_channel: {:content=>"c"}
+No template found for MessagesController#create, rendering head :no_content
+Completed 204 No Content in 18ms (ActiveRecord: 6.7ms | Allocations: 3810)
+
+
+RoomChannel transmitting {"content"=>"c"} (via streamed from room_channel)
+Started POST "/messages" for ::1 at 2019-10-18 17:25:12 +0500
+Processing by MessagesController#create as JS
+  Parameters: {"message"=>{"content"=>"c"}, "commit"=>"Create Message"}
+  [1m[35m (0.7ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+  [1m[36mMessage Create (1.2ms)[0m  [1m[32mINSERT INTO "messages" ("content", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["content", "c"], ["created_at", "2019-10-18 12:25:12.719482"], ["updated_at", "2019-10-18 12:25:12.719482"]]
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+  [1m[35m (6.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+[ActionCable] Broadcasting to room_channel: {:content=>"c"}
+No template found for MessagesController#create, rendering head :no_content
+Completed 204 No Content in 41ms (ActiveRecord: 7.9ms | Allocations: 3807)
+
+
+RoomChannel transmitting {"content"=>"c"} (via streamed from room_channel)
+Started POST "/messages" for ::1 at 2019-10-18 17:25:12 +0500
+Processing by MessagesController#create as JS
+  Parameters: {"message"=>{"content"=>"c"}, "commit"=>"Create Message"}
+  [1m[35m (0.4ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+  [1m[36mMessage Create (1.7ms)[0m  [1m[32mINSERT INTO "messages" ("content", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["content", "c"], ["created_at", "2019-10-18 12:25:12.907379"], ["updated_at", "2019-10-18 12:25:12.907379"]]
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+  [1m[35m (7.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+[ActionCable] Broadcasting to room_channel: {:content=>"c"}
+No template found for MessagesController#create, rendering head :no_content
+Completed 204 No Content in 41ms (ActiveRecord: 9.6ms | Allocations: 3808)
+
+
+RoomChannel transmitting {"content"=>"c"} (via streamed from room_channel)
+Started POST "/messages" for ::1 at 2019-10-18 17:25:13 +0500
+Processing by MessagesController#create as JS
+  Parameters: {"message"=>{"content"=>"c"}, "commit"=>"Create Message"}
+  [1m[35m (0.3ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+  [1m[36mMessage Create (1.4ms)[0m  [1m[32mINSERT INTO "messages" ("content", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["content", "c"], ["created_at", "2019-10-18 12:25:13.090427"], ["updated_at", "2019-10-18 12:25:13.090427"]]
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+  [1m[35m (9.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+[ActionCable] Broadcasting to room_channel: {:content=>"c"}
+No template found for MessagesController#create, rendering head :no_content
+Completed 204 No Content in 43ms (ActiveRecord: 10.9ms | Allocations: 3808)
+
+
+RoomChannel transmitting {"content"=>"c"} (via streamed from room_channel)
+Started POST "/messages" for ::1 at 2019-10-18 17:25:13 +0500
+Processing by MessagesController#create as JS
+  Parameters: {"message"=>{"content"=>"c"}, "commit"=>"Create Message"}
+  [1m[35m (0.6ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+  [1m[36mMessage Create (8.7ms)[0m  [1m[32mINSERT INTO "messages" ("content", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["content", "c"], ["created_at", "2019-10-18 12:25:13.256016"], ["updated_at", "2019-10-18 12:25:13.256016"]]
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+  [1m[35m (6.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+[ActionCable] Broadcasting to room_channel: {:content=>"c"}
+No template found for MessagesController#create, rendering head :no_content
+Completed 204 No Content in 53ms (ActiveRecord: 15.4ms | Allocations: 3814)
+
+
+RoomChannel transmitting {"content"=>"c"} (via streamed from room_channel)
+Started POST "/messages" for ::1 at 2019-10-18 17:25:13 +0500
+Processing by MessagesController#create as JS
+  Parameters: {"message"=>{"content"=>"c"}, "commit"=>"Create Message"}
+  [1m[35m (0.3ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+  [1m[36mMessage Create (0.8ms)[0m  [1m[32mINSERT INTO "messages" ("content", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["content", "c"], ["created_at", "2019-10-18 12:25:13.445777"], ["updated_at", "2019-10-18 12:25:13.445777"]]
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+  [1m[35m (4.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+[ActionCable] Broadcasting to room_channel: {:content=>"c"}
+No template found for MessagesController#create, rendering head :no_content
+RoomChannel transmitting {"content"=>"c"} (via streamed from room_channel)
+Completed 204 No Content in 23ms (ActiveRecord: 6.1ms | Allocations: 3947)
+
+
+Started POST "/messages" for ::1 at 2019-10-18 17:25:14 +0500
+Processing by MessagesController#create as JS
+  Parameters: {"message"=>{"content"=>"c"}, "commit"=>"Create Message"}
+  [1m[35m (0.3ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+  [1m[36mMessage Create (1.3ms)[0m  [1m[32mINSERT INTO "messages" ("content", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["content", "c"], ["created_at", "2019-10-18 12:25:14.573353"], ["updated_at", "2019-10-18 12:25:14.573353"]]
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+  [1m[35m (7.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+[ActionCable] Broadcasting to room_channel: {:content=>"c"}
+No template found for MessagesController#create, rendering head :no_content
+RoomChannel transmitting {"content"=>"c"} (via streamed from room_channel)
+Completed 204 No Content in 54ms (ActiveRecord: 9.4ms | Allocations: 3944)
+
+
+Started POST "/messages" for ::1 at 2019-10-18 17:25:14 +0500
+Processing by MessagesController#create as JS
+  Parameters: {"message"=>{"content"=>"c"}, "commit"=>"Create Message"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+  [1m[36mMessage Create (1.4ms)[0m  [1m[32mINSERT INTO "messages" ("content", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["content", "c"], ["created_at", "2019-10-18 12:25:14.725676"], ["updated_at", "2019-10-18 12:25:14.725676"]]
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+  [1m[35m (4.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+[ActionCable] Broadcasting to room_channel: {:content=>"c"}
+No template found for MessagesController#create, rendering head :no_content
+Completed 204 No Content in 24ms (ActiveRecord: 6.3ms | Allocations: 3951)
+
+
+RoomChannel transmitting {"content"=>"c"} (via streamed from room_channel)
+Started POST "/messages" for ::1 at 2019-10-18 17:25:14 +0500
+Processing by MessagesController#create as JS
+  Parameters: {"message"=>{"content"=>"c"}, "commit"=>"Create Message"}
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+  [1m[36mMessage Create (9.1ms)[0m  [1m[32mINSERT INTO "messages" ("content", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["content", "c"], ["created_at", "2019-10-18 12:25:14.916439"], ["updated_at", "2019-10-18 12:25:14.916439"]]
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+  [1m[35m (5.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+[ActionCable] Broadcasting to room_channel: {:content=>"c"}
+No template found for MessagesController#create, rendering head :no_content
+Completed 204 No Content in 68ms (ActiveRecord: 15.2ms | Allocations: 3797)
+
+
+RoomChannel transmitting {"content"=>"c"} (via streamed from room_channel)
+Started POST "/messages" for ::1 at 2019-10-18 17:25:15 +0500
+Processing by MessagesController#create as JS
+  Parameters: {"message"=>{"content"=>"c"}, "commit"=>"Create Message"}
+  [1m[35m (0.3ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+  [1m[36mMessage Create (1.8ms)[0m  [1m[32mINSERT INTO "messages" ("content", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["content", "c"], ["created_at", "2019-10-18 12:25:15.109362"], ["updated_at", "2019-10-18 12:25:15.109362"]]
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+  [1m[35m (4.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+[ActionCable] Broadcasting to room_channel: {:content=>"c"}
+No template found for MessagesController#create, rendering head :no_content
+Completed 204 No Content in 35ms (ActiveRecord: 6.7ms | Allocations: 3811)
+
+
+RoomChannel transmitting {"content"=>"c"} (via streamed from room_channel)
+Started POST "/messages" for ::1 at 2019-10-18 17:25:16 +0500
+Processing by MessagesController#create as JS
+  Parameters: {"message"=>{"content"=>"c"}, "commit"=>"Create Message"}
+  [1m[35m (0.4ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+  [1m[36mMessage Create (1.0ms)[0m  [1m[32mINSERT INTO "messages" ("content", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["content", "c"], ["created_at", "2019-10-18 12:25:16.092915"], ["updated_at", "2019-10-18 12:25:16.092915"]]
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+  [1m[35m (7.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+[ActionCable] Broadcasting to room_channel: {:content=>"c"}
+No template found for MessagesController#create, rendering head :no_content
+Completed 204 No Content in 48ms (ActiveRecord: 9.1ms | Allocations: 3812)
+
+
+RoomChannel transmitting {"content"=>"c"} (via streamed from room_channel)
+Started POST "/messages" for ::1 at 2019-10-18 17:25:16 +0500
+Processing by MessagesController#create as JS
+  Parameters: {"message"=>{"content"=>"c"}, "commit"=>"Create Message"}
+  [1m[35m (0.3ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+  [1m[36mMessage Create (6.5ms)[0m  [1m[32mINSERT INTO "messages" ("content", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["content", "c"], ["created_at", "2019-10-18 12:25:16.257960"], ["updated_at", "2019-10-18 12:25:16.257960"]]
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+  [1m[35m (5.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+[ActionCable] Broadcasting to room_channel: {:content=>"c"}
+No template found for MessagesController#create, rendering head :no_content
+RoomChannel transmitting {"content"=>"c"} (via streamed from room_channel)
+Completed 204 No Content in 48ms (ActiveRecord: 12.3ms | Allocations: 3942)
+
+
+Started POST "/messages" for ::1 at 2019-10-18 17:25:16 +0500
+Processing by MessagesController#create as JS
+  Parameters: {"message"=>{"content"=>"c"}, "commit"=>"Create Message"}
+  [1m[35m (0.3ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+  [1m[36mMessage Create (5.1ms)[0m  [1m[32mINSERT INTO "messages" ("content", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["content", "c"], ["created_at", "2019-10-18 12:25:16.453921"], ["updated_at", "2019-10-18 12:25:16.453921"]]
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+  [1m[35m (5.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+[ActionCable] Broadcasting to room_channel: {:content=>"c"}
+No template found for MessagesController#create, rendering head :no_content
+Completed 204 No Content in 71ms (ActiveRecord: 10.9ms | Allocations: 3809)
+
+
+RoomChannel transmitting {"content"=>"c"} (via streamed from room_channel)
+Started POST "/messages" for ::1 at 2019-10-18 17:25:16 +0500
+Processing by MessagesController#create as JS
+  Parameters: {"message"=>{"content"=>"c"}, "commit"=>"Create Message"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+  [1m[36mMessage Create (2.7ms)[0m  [1m[32mINSERT INTO "messages" ("content", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["content", "c"], ["created_at", "2019-10-18 12:25:16.616379"], ["updated_at", "2019-10-18 12:25:16.616379"]]
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+  [1m[35m (5.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+[ActionCable] Broadcasting to room_channel: {:content=>"c"}
+No template found for MessagesController#create, rendering head :no_content
+Completed 204 No Content in 38ms (ActiveRecord: 8.1ms | Allocations: 3818)
+
+
+RoomChannel transmitting {"content"=>"c"} (via streamed from room_channel)
+Started POST "/messages" for ::1 at 2019-10-18 17:25:18 +0500
+Processing by MessagesController#create as JS
+  Parameters: {"message"=>{"content"=>"c"}, "commit"=>"Create Message"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+  [1m[36mMessage Create (1.3ms)[0m  [1m[32mINSERT INTO "messages" ("content", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["content", "c"], ["created_at", "2019-10-18 12:25:18.076764"], ["updated_at", "2019-10-18 12:25:18.076764"]]
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+  [1m[35m (5.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+[ActionCable] Broadcasting to room_channel: {:content=>"c"}
+No template found for MessagesController#create, rendering head :no_content
+Completed 204 No Content in 25ms (ActiveRecord: 6.9ms | Allocations: 3808)
+
+
+RoomChannel transmitting {"content"=>"c"} (via streamed from room_channel)
+Started POST "/messages" for ::1 at 2019-10-18 17:25:18 +0500
+Processing by MessagesController#create as JS
+  Parameters: {"message"=>{"content"=>"c"}, "commit"=>"Create Message"}
+  [1m[35m (0.3ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+  [1m[36mMessage Create (1.6ms)[0m  [1m[32mINSERT INTO "messages" ("content", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["content", "c"], ["created_at", "2019-10-18 12:25:18.236423"], ["updated_at", "2019-10-18 12:25:18.236423"]]
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+  [1m[35m (4.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+[ActionCable] Broadcasting to room_channel: {:content=>"c"}
+No template found for MessagesController#create, rendering head :no_content
+RoomChannel transmitting {"content"=>"c"} (via streamed from room_channel)
+Completed 204 No Content in 42ms (ActiveRecord: 6.6ms | Allocations: 3946)
+
+
+Started POST "/messages" for ::1 at 2019-10-18 17:25:18 +0500
+Processing by MessagesController#create as JS
+  Parameters: {"message"=>{"content"=>"c"}, "commit"=>"Create Message"}
+  [1m[35m (0.3ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+  [1m[36mMessage Create (1.4ms)[0m  [1m[32mINSERT INTO "messages" ("content", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["content", "c"], ["created_at", "2019-10-18 12:25:18.584678"], ["updated_at", "2019-10-18 12:25:18.584678"]]
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+  [1m[35m (7.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+[ActionCable] Broadcasting to room_channel: {:content=>"c"}
+No template found for MessagesController#create, rendering head :no_content
+RoomChannel transmitting {"content"=>"c"} (via streamed from room_channel)
+Completed 204 No Content in 72ms (ActiveRecord: 8.7ms | Allocations: 3945)
+
+
+Started POST "/messages" for ::1 at 2019-10-18 17:25:18 +0500
+Processing by MessagesController#create as JS
+  Parameters: {"message"=>{"content"=>"c"}, "commit"=>"Create Message"}
+  [1m[35m (0.3ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+  [1m[36mMessage Create (3.4ms)[0m  [1m[32mINSERT INTO "messages" ("content", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["content", "c"], ["created_at", "2019-10-18 12:25:18.788849"], ["updated_at", "2019-10-18 12:25:18.788849"]]
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+  [1m[35m (5.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+[ActionCable] Broadcasting to room_channel: {:content=>"c"}
+No template found for MessagesController#create, rendering head :no_content
+Completed 204 No Content in 36ms (ActiveRecord: 9.1ms | Allocations: 3813)
+
+
+RoomChannel transmitting {"content"=>"c"} (via streamed from room_channel)
+Started POST "/messages" for ::1 at 2019-10-18 17:25:19 +0500
+Processing by MessagesController#create as JS
+  Parameters: {"message"=>{"content"=>"c"}, "commit"=>"Create Message"}
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+  [1m[36mMessage Create (2.9ms)[0m  [1m[32mINSERT INTO "messages" ("content", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["content", "c"], ["created_at", "2019-10-18 12:25:19.486505"], ["updated_at", "2019-10-18 12:25:19.486505"]]
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+  [1m[35m (6.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+[ActionCable] Broadcasting to room_channel: {:content=>"c"}
+No template found for MessagesController#create, rendering head :no_content
+Completed 204 No Content in 36ms (ActiveRecord: 9.9ms | Allocations: 3810)
+
+
+RoomChannel transmitting {"content"=>"c"} (via streamed from room_channel)
+Started POST "/messages" for ::1 at 2019-10-18 17:25:19 +0500
+Processing by MessagesController#create as JS
+  Parameters: {"message"=>{"content"=>"c"}, "commit"=>"Create Message"}
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+  [1m[36mMessage Create (1.1ms)[0m  [1m[32mINSERT INTO "messages" ("content", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["content", "c"], ["created_at", "2019-10-18 12:25:19.679035"], ["updated_at", "2019-10-18 12:25:19.679035"]]
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+  [1m[35m (6.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+[ActionCable] Broadcasting to room_channel: {:content=>"c"}
+No template found for MessagesController#create, rendering head :no_content
+RoomChannel transmitting {"content"=>"c"} (via streamed from room_channel)
+Completed 204 No Content in 41ms (ActiveRecord: 7.7ms | Allocations: 3943)
+
+
+Started POST "/messages" for ::1 at 2019-10-18 17:25:19 +0500
+Processing by MessagesController#create as JS
+  Parameters: {"message"=>{"content"=>"c"}, "commit"=>"Create Message"}
+  [1m[35m (0.3ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+  [1m[36mMessage Create (1.5ms)[0m  [1m[32mINSERT INTO "messages" ("content", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["content", "c"], ["created_at", "2019-10-18 12:25:19.873003"], ["updated_at", "2019-10-18 12:25:19.873003"]]
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+  [1m[35m (5.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+[ActionCable] Broadcasting to room_channel: {:content=>"c"}
+No template found for MessagesController#create, rendering head :no_content
+RoomChannel transmitting {"content"=>"c"} (via streamed from room_channel)
+Completed 204 No Content in 37ms (ActiveRecord: 6.8ms | Allocations: 3951)
+
+
+Started GET "/" for ::1 at 2019-10-18 17:25:43 +0500
+Processing by LandingController#index as HTML
+  Rendering landing/index.html.erb within layouts/application
+  Rendered landing/index.html.erb within layouts/application (Duration: 2.7ms | Allocations: 334)
+Completed 200 OK in 16ms (Views: 13.7ms | ActiveRecord: 0.0ms | Allocations: 5998)
+
+
+Started GET "/cable" for ::1 at 2019-10-18 17:25:43 +0500
+Started GET "/cable/" [WebSocket] for ::1 at 2019-10-18 17:25:43 +0500
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+RoomChannel is transmitting the subscription confirmation
+RoomChannel is streaming from room_channel
+Started POST "/messages" for ::1 at 2019-10-18 17:25:47 +0500
+Processing by MessagesController#create as JS
+  Parameters: {"message"=>{"content"=>"c"}, "commit"=>"Create Message"}
+  [1m[35m (0.3ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+  [1m[36mMessage Create (2.3ms)[0m  [1m[32mINSERT INTO "messages" ("content", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["content", "c"], ["created_at", "2019-10-18 12:25:47.481486"], ["updated_at", "2019-10-18 12:25:47.481486"]]
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+  [1m[35m (8.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+[ActionCable] Broadcasting to room_channel: {:content=>"c"}
+No template found for MessagesController#create, rendering head :no_content
+RoomChannel transmitting {"content"=>"c"} (via streamed from room_channel)
+Completed 204 No Content in 40ms (ActiveRecord: 10.6ms | Allocations: 4126)
+
+
+RoomChannel transmitting {"content"=>"c"} (via streamed from room_channel)
+Started POST "/messages" for ::1 at 2019-10-18 17:25:51 +0500
+Processing by MessagesController#create as JS
+  Parameters: {"message"=>{"content"=>"n"}, "commit"=>"Create Message"}
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+  [1m[36mMessage Create (1.3ms)[0m  [1m[32mINSERT INTO "messages" ("content", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["content", "n"], ["created_at", "2019-10-18 12:25:51.658349"], ["updated_at", "2019-10-18 12:25:51.658349"]]
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+  [1m[35m (6.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+[ActionCable] Broadcasting to room_channel: {:content=>"n"}
+No template found for MessagesController#create, rendering head :no_content
+RoomChannel transmitting {"content"=>"n"} (via streamed from room_channel)
+Completed 204 No Content in 38ms (ActiveRecord: 7.6ms | Allocations: 4094)
+
+
+RoomChannel transmitting {"content"=>"n"} (via streamed from room_channel)
+Started POST "/messages" for ::1 at 2019-10-18 17:25:51 +0500
+Processing by MessagesController#create as JS
+  Parameters: {"message"=>{"content"=>"n"}, "commit"=>"Create Message"}
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+  [1m[36mMessage Create (0.6ms)[0m  [1m[32mINSERT INTO "messages" ("content", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["content", "n"], ["created_at", "2019-10-18 12:25:51.916482"], ["updated_at", "2019-10-18 12:25:51.916482"]]
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+  [1m[35m (5.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+[ActionCable] Broadcasting to room_channel: {:content=>"n"}
+No template found for MessagesController#create, rendering head :no_content
+RoomChannel transmitting {"content"=>"n"} (via streamed from room_channel)
+RoomChannel transmitting {"content"=>"n"} (via streamed from room_channel)
+Completed 204 No Content in 27ms (ActiveRecord: 6.7ms | Allocations: 4107)
+
+
+Started POST "/messages" for ::1 at 2019-10-18 17:25:52 +0500
+Processing by MessagesController#create as JS
+  Parameters: {"message"=>{"content"=>"n"}, "commit"=>"Create Message"}
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+  [1m[36mMessage Create (3.2ms)[0m  [1m[32mINSERT INTO "messages" ("content", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["content", "n"], ["created_at", "2019-10-18 12:25:52.075046"], ["updated_at", "2019-10-18 12:25:52.075046"]]
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+  [1m[35m (7.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+[ActionCable] Broadcasting to room_channel: {:content=>"n"}
+No template found for MessagesController#create, rendering head :no_content
+RoomChannel transmitting {"content"=>"n"} (via streamed from room_channel)
+RoomChannel transmitting {"content"=>"n"} (via streamed from room_channel)
+Completed 204 No Content in 46ms (ActiveRecord: 11.3ms | Allocations: 3969)
+
+
+Started POST "/messages" for ::1 at 2019-10-18 17:25:52 +0500
+Processing by MessagesController#create as JS
+  Parameters: {"message"=>{"content"=>"n"}, "commit"=>"Create Message"}
+  [1m[35m (0.3ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+  [1m[36mMessage Create (5.2ms)[0m  [1m[32mINSERT INTO "messages" ("content", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["content", "n"], ["created_at", "2019-10-18 12:25:52.236987"], ["updated_at", "2019-10-18 12:25:52.236987"]]
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+  [1m[35m (6.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+[ActionCable] Broadcasting to room_channel: {:content=>"n"}
+No template found for MessagesController#create, rendering head :no_content
+RoomChannel transmitting {"content"=>"n"} (via streamed from room_channel)
+Completed 204 No Content in 44ms (ActiveRecord: 12.3ms | Allocations: 3969)
+
+
+RoomChannel transmitting {"content"=>"n"} (via streamed from room_channel)
+Finished "/cable/" [WebSocket] for ::1 at 2019-10-19 09:41:25 +0500
+RoomChannel stopped streaming from room_channel
+Finished "/cable/" [WebSocket] for ::1 at 2019-10-19 09:41:25 +0500
+RoomChannel stopped streaming from room_channel
+Started GET "/cable" for ::1 at 2019-10-19 09:41:26 +0500
+Started GET "/cable/" [WebSocket] for ::1 at 2019-10-19 09:41:26 +0500
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+RoomChannel is transmitting the subscription confirmation
+RoomChannel is streaming from room_channel
+Started GET "/cable" for ::1 at 2019-10-19 09:41:27 +0500
+Started GET "/cable/" [WebSocket] for ::1 at 2019-10-19 09:41:27 +0500
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+RoomChannel is transmitting the subscription confirmation
+RoomChannel is streaming from room_channel
+Finished "/cable/" [WebSocket] for ::1 at 2019-10-19 10:44:15 +0500
+RoomChannel stopped streaming from room_channel
+Finished "/cable/" [WebSocket] for ::1 at 2019-10-19 10:44:15 +0500
+RoomChannel stopped streaming from room_channel
+Started GET "/cable" for ::1 at 2019-10-19 10:44:15 +0500
+Started GET "/cable/" [WebSocket] for ::1 at 2019-10-19 10:44:15 +0500
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+RoomChannel is transmitting the subscription confirmation
+RoomChannel is streaming from room_channel
+Started GET "/cable" for ::1 at 2019-10-19 10:44:16 +0500
+Started GET "/cable/" [WebSocket] for ::1 at 2019-10-19 10:44:16 +0500
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+RoomChannel is transmitting the subscription confirmation
+RoomChannel is streaming from room_channel
+Finished "/cable/" [WebSocket] for ::1 at 2019-10-19 12:08:35 +0500
+RoomChannel stopped streaming from room_channel
+Finished "/cable/" [WebSocket] for ::1 at 2019-10-19 12:08:35 +0500
+RoomChannel stopped streaming from room_channel
+Started GET "/cable" for ::1 at 2019-10-19 12:08:35 +0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Started GET "/cable/" [WebSocket] for ::1 at 2019-10-19 12:08:35 +0500
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+RoomChannel is transmitting the subscription confirmation
+RoomChannel is streaming from room_channel
+Started GET "/cable" for ::1 at 2019-10-19 12:08:36 +0500
+Started GET "/cable/" [WebSocket] for ::1 at 2019-10-19 12:08:36 +0500
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+RoomChannel is transmitting the subscription confirmation
+RoomChannel is streaming from room_channel
+Finished "/cable/" [WebSocket] for ::1 at 2019-10-19 12:15:54 +0500
+RoomChannel stopped streaming from room_channel
+Finished "/cable/" [WebSocket] for ::1 at 2019-10-19 12:15:54 +0500
+RoomChannel stopped streaming from room_channel
+Started GET "/cable" for ::1 at 2019-10-19 12:15:54 +0500
+Started GET "/cable/" [WebSocket] for ::1 at 2019-10-19 12:15:54 +0500
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+RoomChannel is transmitting the subscription confirmation
+RoomChannel is streaming from room_channel
+Started GET "/cable" for ::1 at 2019-10-19 12:15:54 +0500
+Started GET "/cable/" [WebSocket] for ::1 at 2019-10-19 12:15:54 +0500
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+RoomChannel is transmitting the subscription confirmation
+RoomChannel is streaming from room_channel
+Started GET "/" for ::1 at 2019-10-19 12:16:18 +0500
+Processing by LandingController#index as HTML
+  Rendering landing/index.html.erb within layouts/application
+  Rendered landing/index.html.erb within layouts/application (Duration: 6.9ms | Allocations: 506)
+[Webpacker] Compiling…
+[Webpacker] Compiled all packs in /home/denis/ruby/RealTimeChat/public/packs
+Completed 200 OK in 3513ms (Views: 3507.7ms | ActiveRecord: 0.0ms | Allocations: 8899)
+
+
+Finished "/cable/" [WebSocket] for ::1 at 2019-10-19 12:16:22 +0500
+RoomChannel stopped streaming from room_channel
+Started POST "/messages" for ::1 at 2019-10-19 12:16:27 +0500
+Processing by MessagesController#create as JS
+  Parameters: {"message"=>{"content"=>"n"}, "commit"=>"Create Message"}
+  [1m[35m (0.3ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+  [1m[36mMessage Create (2.0ms)[0m  [1m[32mINSERT INTO "messages" ("content", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["content", "n"], ["created_at", "2019-10-19 07:16:27.616965"], ["updated_at", "2019-10-19 07:16:27.616965"]]
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+  [1m[35m (8.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+[ActionCable] Broadcasting to room_channel: {:content=>"n"}
+RoomChannel transmitting {"content"=>"n"} (via streamed from room_channel)
+No template found for MessagesController#create, rendering head :no_content
+Completed 204 No Content in 47ms (ActiveRecord: 10.4ms | Allocations: 5596)
+
+
+Started POST "/messages" for ::1 at 2019-10-19 12:16:29 +0500
+Processing by MessagesController#create as JS
+  Parameters: {"message"=>{"content"=>"n"}, "commit"=>"Create Message"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+  [1m[36mMessage Create (1.0ms)[0m  [1m[32mINSERT INTO "messages" ("content", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["content", "n"], ["created_at", "2019-10-19 07:16:29.524307"], ["updated_at", "2019-10-19 07:16:29.524307"]]
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+  [1m[35m (7.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+[ActionCable] Broadcasting to room_channel: {:content=>"n"}
+No template found for MessagesController#create, rendering head :no_content
+Completed 204 No Content in 25ms (ActiveRecord: 8.0ms | Allocations: 3809)
+
+
+RoomChannel transmitting {"content"=>"n"} (via streamed from room_channel)
+Started POST "/messages" for ::1 at 2019-10-19 12:16:29 +0500
+Processing by MessagesController#create as JS
+  Parameters: {"message"=>{"content"=>"n"}, "commit"=>"Create Message"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+  [1m[36mMessage Create (0.4ms)[0m  [1m[32mINSERT INTO "messages" ("content", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["content", "n"], ["created_at", "2019-10-19 07:16:29.708314"], ["updated_at", "2019-10-19 07:16:29.708314"]]
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+  [1m[35m (4.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+[ActionCable] Broadcasting to room_channel: {:content=>"n"}
+No template found for MessagesController#create, rendering head :no_content
+Completed 204 No Content in 15ms (ActiveRecord: 5.3ms | Allocations: 3814)
+
+
+RoomChannel transmitting {"content"=>"n"} (via streamed from room_channel)
+Started POST "/messages" for ::1 at 2019-10-19 12:16:29 +0500
+Processing by MessagesController#create as JS
+  Parameters: {"message"=>{"content"=>"n"}, "commit"=>"Create Message"}
+  [1m[35m (0.3ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+  [1m[36mMessage Create (6.0ms)[0m  [1m[32mINSERT INTO "messages" ("content", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["content", "n"], ["created_at", "2019-10-19 07:16:29.895638"], ["updated_at", "2019-10-19 07:16:29.895638"]]
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+  [1m[35m (5.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+[ActionCable] Broadcasting to room_channel: {:content=>"n"}
+No template found for MessagesController#create, rendering head :no_content
+RoomChannel transmitting {"content"=>"n"} (via streamed from room_channel)
+Completed 204 No Content in 42ms (ActiveRecord: 11.7ms | Allocations: 3937)
+
+
+Started POST "/messages" for ::1 at 2019-10-19 12:16:30 +0500
+Processing by MessagesController#create as JS
+  Parameters: {"message"=>{"content"=>"n"}, "commit"=>"Create Message"}
+  [1m[35m (0.3ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+  [1m[36mMessage Create (3.2ms)[0m  [1m[32mINSERT INTO "messages" ("content", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["content", "n"], ["created_at", "2019-10-19 07:16:30.093182"], ["updated_at", "2019-10-19 07:16:30.093182"]]
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+  [1m[35m (6.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+[ActionCable] Broadcasting to room_channel: {:content=>"n"}
+No template found for MessagesController#create, rendering head :no_content
+Completed 204 No Content in 41ms (ActiveRecord: 9.8ms | Allocations: 3813)
+
+
+RoomChannel transmitting {"content"=>"n"} (via streamed from room_channel)
+Started POST "/messages" for ::1 at 2019-10-19 12:16:30 +0500
+Processing by MessagesController#create as JS
+  Parameters: {"message"=>{"content"=>"n"}, "commit"=>"Create Message"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+  [1m[36mMessage Create (0.7ms)[0m  [1m[32mINSERT INTO "messages" ("content", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["content", "n"], ["created_at", "2019-10-19 07:16:30.293007"], ["updated_at", "2019-10-19 07:16:30.293007"]]
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+  [1m[35m (4.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+[ActionCable] Broadcasting to room_channel: {:content=>"n"}
+No template found for MessagesController#create, rendering head :no_content
+RoomChannel transmitting {"content"=>"n"} (via streamed from room_channel)
+Completed 204 No Content in 15ms (ActiveRecord: 5.3ms | Allocations: 3943)
+
+
+Started POST "/messages" for ::1 at 2019-10-19 12:16:30 +0500
+Processing by MessagesController#create as JS
+  Parameters: {"message"=>{"content"=>"n"}, "commit"=>"Create Message"}
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+  [1m[36mMessage Create (3.7ms)[0m  [1m[32mINSERT INTO "messages" ("content", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["content", "n"], ["created_at", "2019-10-19 07:16:30.826885"], ["updated_at", "2019-10-19 07:16:30.826885"]]
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+  [1m[35m (8.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+[ActionCable] Broadcasting to room_channel: {:content=>"n"}
+No template found for MessagesController#create, rendering head :no_content
+Completed 204 No Content in 38ms (ActiveRecord: 12.2ms | Allocations: 3953)
+
+
+RoomChannel transmitting {"content"=>"n"} (via streamed from room_channel)
+Started POST "/messages" for ::1 at 2019-10-19 12:16:30 +0500
+Processing by MessagesController#create as JS
+  Parameters: {"message"=>{"content"=>"n"}, "commit"=>"Create Message"}
+  [1m[35m (0.3ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+  [1m[36mMessage Create (6.0ms)[0m  [1m[32mINSERT INTO "messages" ("content", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["content", "n"], ["created_at", "2019-10-19 07:16:31.006013"], ["updated_at", "2019-10-19 07:16:31.006013"]]
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+  [1m[35m (5.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+[ActionCable] Broadcasting to room_channel: {:content=>"n"}
+No template found for MessagesController#create, rendering head :no_content
+Completed 204 No Content in 39ms (ActiveRecord: 12.1ms | Allocations: 3949)
+
+
+RoomChannel transmitting {"content"=>"n"} (via streamed from room_channel)
+Started POST "/messages" for ::1 at 2019-10-19 12:16:31 +0500
+Processing by MessagesController#create as JS
+  Parameters: {"message"=>{"content"=>"n"}, "commit"=>"Create Message"}
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+  [1m[36mMessage Create (2.0ms)[0m  [1m[32mINSERT INTO "messages" ("content", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["content", "n"], ["created_at", "2019-10-19 07:16:31.200542"], ["updated_at", "2019-10-19 07:16:31.200542"]]
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+  [1m[35m (5.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+[ActionCable] Broadcasting to room_channel: {:content=>"n"}
+No template found for MessagesController#create, rendering head :no_content
+Completed 204 No Content in 32ms (ActiveRecord: 7.5ms | Allocations: 3816)
+
+
+RoomChannel transmitting {"content"=>"n"} (via streamed from room_channel)
+Started POST "/messages" for ::1 at 2019-10-19 12:16:31 +0500
+Processing by MessagesController#create as JS
+  Parameters: {"message"=>{"content"=>"n"}, "commit"=>"Create Message"}
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+  [1m[36mMessage Create (2.8ms)[0m  [1m[32mINSERT INTO "messages" ("content", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["content", "n"], ["created_at", "2019-10-19 07:16:31.603581"], ["updated_at", "2019-10-19 07:16:31.603581"]]
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+  [1m[35m (8.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+[ActionCable] Broadcasting to room_channel: {:content=>"n"}
+No template found for MessagesController#create, rendering head :no_content
+RoomChannel transmitting {"content"=>"n"} (via streamed from room_channel)
+Completed 204 No Content in 37ms (ActiveRecord: 11.5ms | Allocations: 3945)
+
+
+Started POST "/messages" for ::1 at 2019-10-19 12:16:31 +0500
+Processing by MessagesController#create as JS
+  Parameters: {"message"=>{"content"=>"n"}, "commit"=>"Create Message"}
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+  [1m[36mMessage Create (1.7ms)[0m  [1m[32mINSERT INTO "messages" ("content", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["content", "n"], ["created_at", "2019-10-19 07:16:31.804504"], ["updated_at", "2019-10-19 07:16:31.804504"]]
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+  [1m[35m (6.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+[ActionCable] Broadcasting to room_channel: {:content=>"n"}
+No template found for MessagesController#create, rendering head :no_content
+Completed 204 No Content in 27ms (ActiveRecord: 8.2ms | Allocations: 3951)
+
+
+RoomChannel transmitting {"content"=>"n"} (via streamed from room_channel)
+Started POST "/messages" for ::1 at 2019-10-19 12:16:32 +0500
+Processing by MessagesController#create as JS
+  Parameters: {"message"=>{"content"=>"n"}, "commit"=>"Create Message"}
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+  [1m[36mMessage Create (3.8ms)[0m  [1m[32mINSERT INTO "messages" ("content", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["content", "n"], ["created_at", "2019-10-19 07:16:32.016439"], ["updated_at", "2019-10-19 07:16:32.016439"]]
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+  [1m[35m (5.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+[ActionCable] Broadcasting to room_channel: {:content=>"n"}
+No template found for MessagesController#create, rendering head :no_content
+RoomChannel transmitting {"content"=>"n"} (via streamed from room_channel)
+Completed 204 No Content in 32ms (ActiveRecord: 9.3ms | Allocations: 3938)
+
+
+Started POST "/messages" for ::1 at 2019-10-19 12:16:32 +0500
+Processing by MessagesController#create as JS
+  Parameters: {"message"=>{"content"=>"n"}, "commit"=>"Create Message"}
+  [1m[35m (0.3ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+  [1m[36mMessage Create (4.5ms)[0m  [1m[32mINSERT INTO "messages" ("content", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["content", "n"], ["created_at", "2019-10-19 07:16:32.226633"], ["updated_at", "2019-10-19 07:16:32.226633"]]
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+  [1m[35m (5.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+[ActionCable] Broadcasting to room_channel: {:content=>"n"}
+No template found for MessagesController#create, rendering head :no_content
+RoomChannel transmitting {"content"=>"n"} (via streamed from room_channel)
+Completed 204 No Content in 39ms (ActiveRecord: 10.5ms | Allocations: 3947)
+
+
+Started POST "/messages" for ::1 at 2019-10-19 12:16:33 +0500
+Processing by MessagesController#create as JS
+  Parameters: {"message"=>{"content"=>"n"}, "commit"=>"Create Message"}
+  [1m[35m (0.3ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+  [1m[36mMessage Create (1.0ms)[0m  [1m[32mINSERT INTO "messages" ("content", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["content", "n"], ["created_at", "2019-10-19 07:16:33.132516"], ["updated_at", "2019-10-19 07:16:33.132516"]]
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+  [1m[35m (9.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+[ActionCable] Broadcasting to room_channel: {:content=>"n"}
+No template found for MessagesController#create, rendering head :no_content
+RoomChannel transmitting {"content"=>"n"} (via streamed from room_channel)
+Completed 204 No Content in 45ms (ActiveRecord: 11.2ms | Allocations: 4373)
+
+
+Started POST "/messages" for ::1 at 2019-10-19 12:16:33 +0500
+Processing by MessagesController#create as JS
+  Parameters: {"message"=>{"content"=>"n"}, "commit"=>"Create Message"}
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+  [1m[36mMessage Create (5.0ms)[0m  [1m[32mINSERT INTO "messages" ("content", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["content", "n"], ["created_at", "2019-10-19 07:16:33.354409"], ["updated_at", "2019-10-19 07:16:33.354409"]]
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+  [1m[35m (5.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+[ActionCable] Broadcasting to room_channel: {:content=>"n"}
+No template found for MessagesController#create, rendering head :no_content
+Completed 204 No Content in 37ms (ActiveRecord: 10.9ms | Allocations: 3810)
+
+
+RoomChannel transmitting {"content"=>"n"} (via streamed from room_channel)
+Started POST "/messages" for ::1 at 2019-10-19 12:16:33 +0500
+Processing by MessagesController#create as JS
+  Parameters: {"message"=>{"content"=>"n"}, "commit"=>"Create Message"}
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+  [1m[36mMessage Create (3.4ms)[0m  [1m[32mINSERT INTO "messages" ("content", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["content", "n"], ["created_at", "2019-10-19 07:16:33.559375"], ["updated_at", "2019-10-19 07:16:33.559375"]]
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+  [1m[35m (7.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+[ActionCable] Broadcasting to room_channel: {:content=>"n"}
+No template found for MessagesController#create, rendering head :no_content
+Completed 204 No Content in 35ms (ActiveRecord: 10.6ms | Allocations: 3817)
+
+
+RoomChannel transmitting {"content"=>"n"} (via streamed from room_channel)
+Started POST "/messages" for ::1 at 2019-10-19 12:16:44 +0500
+Processing by MessagesController#create as JS
+  Parameters: {"message"=>{"content"=>"n"}, "commit"=>"Create Message"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+  [1m[36mMessage Create (0.8ms)[0m  [1m[32mINSERT INTO "messages" ("content", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["content", "n"], ["created_at", "2019-10-19 07:16:44.512656"], ["updated_at", "2019-10-19 07:16:44.512656"]]
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+  [1m[35m (5.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+[ActionCable] Broadcasting to room_channel: {:content=>"n"}
+No template found for MessagesController#create, rendering head :no_content
+RoomChannel transmitting {"content"=>"n"} (via streamed from room_channel)
+Completed 204 No Content in 16ms (ActiveRecord: 6.8ms | Allocations: 3942)
+
+
+Started POST "/messages" for ::1 at 2019-10-19 12:16:44 +0500
+Processing by MessagesController#create as JS
+  Parameters: {"message"=>{"content"=>"n"}, "commit"=>"Create Message"}
+  [1m[35m (0.4ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+  [1m[36mMessage Create (5.9ms)[0m  [1m[32mINSERT INTO "messages" ("content", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["content", "n"], ["created_at", "2019-10-19 07:16:44.855656"], ["updated_at", "2019-10-19 07:16:44.855656"]]
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+  [1m[35m (6.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+[ActionCable] Broadcasting to room_channel: {:content=>"n"}
+No template found for MessagesController#create, rendering head :no_content
+RoomChannel transmitting {"content"=>"n"} (via streamed from room_channel)
+Completed 204 No Content in 34ms (ActiveRecord: 13.3ms | Allocations: 3942)
+
+
+Started POST "/messages" for ::1 at 2019-10-19 12:16:45 +0500
+Processing by MessagesController#create as JS
+  Parameters: {"message"=>{"content"=>"n"}, "commit"=>"Create Message"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+  [1m[36mMessage Create (1.2ms)[0m  [1m[32mINSERT INTO "messages" ("content", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["content", "n"], ["created_at", "2019-10-19 07:16:45.060528"], ["updated_at", "2019-10-19 07:16:45.060528"]]
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+  [1m[35m (4.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+[ActionCable] Broadcasting to room_channel: {:content=>"n"}
+No template found for MessagesController#create, rendering head :no_content
+RoomChannel transmitting {"content"=>"n"} (via streamed from room_channel)
+Completed 204 No Content in 18ms (ActiveRecord: 5.7ms | Allocations: 3951)
+
+
+Started POST "/messages" for ::1 at 2019-10-19 12:16:45 +0500
+Processing by MessagesController#create as JS
+  Parameters: {"message"=>{"content"=>"n"}, "commit"=>"Create Message"}
+  [1m[35m (0.5ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+  [1m[36mMessage Create (2.2ms)[0m  [1m[32mINSERT INTO "messages" ("content", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["content", "n"], ["created_at", "2019-10-19 07:16:45.243430"], ["updated_at", "2019-10-19 07:16:45.243430"]]
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+  [1m[35m (5.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+[ActionCable] Broadcasting to room_channel: {:content=>"n"}
+No template found for MessagesController#create, rendering head :no_content
+Completed 204 No Content in 37ms (ActiveRecord: 8.3ms | Allocations: 3948)
+
+
+RoomChannel transmitting {"content"=>"n"} (via streamed from room_channel)
+Started GET "/" for ::1 at 2019-10-19 12:16:46 +0500
+Processing by LandingController#index as HTML
+  Rendering landing/index.html.erb within layouts/application
+  Rendered landing/index.html.erb within layouts/application (Duration: 4.6ms | Allocations: 341)
+Completed 200 OK in 50ms (Views: 46.0ms | ActiveRecord: 0.0ms | Allocations: 6006)
+
+
+Started POST "/messages" for ::1 at 2019-10-19 12:16:48 +0500
+Processing by MessagesController#create as JS
+  Parameters: {"message"=>{"content"=>"n"}, "commit"=>"Create Message"}
+  [1m[35m (0.4ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+  [1m[36mMessage Create (2.0ms)[0m  [1m[32mINSERT INTO "messages" ("content", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["content", "n"], ["created_at", "2019-10-19 07:16:48.653605"], ["updated_at", "2019-10-19 07:16:48.653605"]]
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+  [1m[35m (6.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+[ActionCable] Broadcasting to room_channel: {:content=>"n"}
+No template found for MessagesController#create, rendering head :no_content
+RoomChannel transmitting {"content"=>"n"} (via streamed from room_channel)
+Completed 204 No Content in 43ms (ActiveRecord: 8.6ms | Allocations: 3941)
+
+
+Started GET "/" for ::1 at 2019-10-19 12:18:38 +0500
+Processing by LandingController#index as HTML
+  Rendering landing/index.html.erb within layouts/application
+  Rendered landing/index.html.erb within layouts/application (Duration: 0.7ms | Allocations: 334)
+[Webpacker] Compiling…
+[Webpacker] Compiled all packs in /home/denis/ruby/RealTimeChat/public/packs
+Completed 200 OK in 3444ms (Views: 3443.5ms | ActiveRecord: 0.0ms | Allocations: 7731)
+
+
+Started GET "/cable" for ::1 at 2019-10-19 12:18:41 +0500
+Started GET "/cable/" [WebSocket] for ::1 at 2019-10-19 12:18:41 +0500
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+RoomChannel is transmitting the subscription confirmation
+RoomChannel is streaming from room_channel
+Started POST "/messages" for ::1 at 2019-10-19 12:18:47 +0500
+Processing by MessagesController#create as JS
+  Parameters: {"message"=>{"content"=>"n"}, "commit"=>"Create Message"}
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+  [1m[36mMessage Create (1.6ms)[0m  [1m[32mINSERT INTO "messages" ("content", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["content", "n"], ["created_at", "2019-10-19 07:18:47.542603"], ["updated_at", "2019-10-19 07:18:47.542603"]]
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+  [1m[35m (5.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+[ActionCable] Broadcasting to room_channel: {:content=>"n"}
+No template found for MessagesController#create, rendering head :no_content
+RoomChannel transmitting {"content"=>"n"} (via streamed from room_channel)
+Completed 204 No Content in 18ms (ActiveRecord: 7.4ms | Allocations: 3962)
+
+
+RoomChannel transmitting {"content"=>"n"} (via streamed from room_channel)
+Started POST "/messages" for ::1 at 2019-10-19 12:18:48 +0500
+Processing by MessagesController#create as JS
+  Parameters: {"message"=>{"content"=>"n"}, "commit"=>"Create Message"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+  [1m[36mMessage Create (0.7ms)[0m  [1m[32mINSERT INTO "messages" ("content", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["content", "n"], ["created_at", "2019-10-19 07:18:48.673974"], ["updated_at", "2019-10-19 07:18:48.673974"]]
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+  [1m[35m (4.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+[ActionCable] Broadcasting to room_channel: {:content=>"n"}
+No template found for MessagesController#create, rendering head :no_content
+Completed 204 No Content in 14ms (ActiveRecord: 4.9ms | Allocations: 3827)
+
+
+RoomChannel transmitting {"content"=>"n"} (via streamed from room_channel)
+RoomChannel transmitting {"content"=>"n"} (via streamed from room_channel)
+Started POST "/messages" for ::1 at 2019-10-19 12:18:48 +0500
+Processing by MessagesController#create as JS
+  Parameters: {"message"=>{"content"=>"n"}, "commit"=>"Create Message"}
+  [1m[35m (0.3ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+  [1m[36mMessage Create (3.8ms)[0m  [1m[32mINSERT INTO "messages" ("content", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["content", "n"], ["created_at", "2019-10-19 07:18:48.871907"], ["updated_at", "2019-10-19 07:18:48.871907"]]
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+  [1m[35m (6.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+[ActionCable] Broadcasting to room_channel: {:content=>"n"}
+No template found for MessagesController#create, rendering head :no_content
+RoomChannel transmitting {"content"=>"n"} (via streamed from room_channel)
+Completed 204 No Content in 41ms (ActiveRecord: 10.6ms | Allocations: 4106)
+
+
+RoomChannel transmitting {"content"=>"n"} (via streamed from room_channel)
+Started GET "/" for ::1 at 2019-10-19 12:18:56 +0500
+Processing by LandingController#index as HTML
+  Rendering landing/index.html.erb within layouts/application
+  Rendered landing/index.html.erb within layouts/application (Duration: 3.9ms | Allocations: 334)
+Completed 200 OK in 45ms (Views: 42.3ms | ActiveRecord: 0.0ms | Allocations: 6003)
+
+
+Finished "/cable/" [WebSocket] for ::1 at 2019-10-19 12:18:56 +0500
+RoomChannel stopped streaming from room_channel
+Started GET "/cable" for ::1 at 2019-10-19 12:18:56 +0500
+Started GET "/cable/" [WebSocket] for ::1 at 2019-10-19 12:18:56 +0500
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+RoomChannel is transmitting the subscription confirmation
+RoomChannel is streaming from room_channel
+Started GET "/" for ::1 at 2019-10-19 12:19:39 +0500
+Processing by LandingController#index as HTML
+  Rendering landing/index.html.erb within layouts/application
+  Rendered landing/index.html.erb within layouts/application (Duration: 4.4ms | Allocations: 334)
+[Webpacker] Compiling…
+[Webpacker] Compiled all packs in /home/denis/ruby/RealTimeChat/public/packs
+Completed 200 OK in 3893ms (Views: 3889.9ms | ActiveRecord: 0.0ms | Allocations: 8254)
+
+
+Started GET "/" for ::1 at 2019-10-19 12:19:42 +0500
+Processing by LandingController#index as HTML
+  Rendering landing/index.html.erb within layouts/application
+  Rendered landing/index.html.erb within layouts/application (Duration: 0.8ms | Allocations: 334)
+Finished "/cable/" [WebSocket] for ::1 at 2019-10-19 12:19:42 +0500
+RoomChannel stopped streaming from room_channel
+Completed 200 OK in 20ms (Views: 19.1ms | ActiveRecord: 0.0ms | Allocations: 6251)
+
+
+Finished "/cable/" [WebSocket] for ::1 at 2019-10-19 12:19:42 +0500
+RoomChannel stopped streaming from room_channel
+Started GET "/cable" for ::1 at 2019-10-19 12:19:43 +0500
+Started GET "/cable/" [WebSocket] for ::1 at 2019-10-19 12:19:43 +0500
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+RoomChannel is streaming from room_channel
+RoomChannel is transmitting the subscription confirmation
+Started GET "/cable" for ::1 at 2019-10-19 12:19:43 +0500
+Started GET "/cable/" [WebSocket] for ::1 at 2019-10-19 12:19:43 +0500
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+RoomChannel is transmitting the subscription confirmation
+RoomChannel is streaming from room_channel
+Started POST "/messages" for ::1 at 2019-10-19 12:19:45 +0500
+Processing by MessagesController#create as JS
+  Parameters: {"message"=>{"content"=>"n"}, "commit"=>"Create Message"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+  [1m[36mMessage Create (0.5ms)[0m  [1m[32mINSERT INTO "messages" ("content", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["content", "n"], ["created_at", "2019-10-19 07:19:45.925582"], ["updated_at", "2019-10-19 07:19:45.925582"]]
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+  [1m[35m (5.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+[ActionCable] Broadcasting to room_channel: {:content=>"n"}
+No template found for MessagesController#create, rendering head :no_content
+RoomChannel transmitting {"content"=>"n"} (via streamed from room_channel)
+RoomChannel transmitting {"content"=>"n"} (via streamed from room_channel)
+Completed 204 No Content in 17ms (ActiveRecord: 6.1ms | Allocations: 4105)
+
+
+Finished "/cable/" [WebSocket] for ::1 at 2019-10-19 12:28:26 +0500
+Finished "/cable/" [WebSocket] for ::1 at 2019-10-19 12:28:26 +0500
+RoomChannel stopped streaming from room_channel
+RoomChannel stopped streaming from room_channel
+Started GET "/cable" for ::1 at 2019-10-19 12:28:26 +0500
+Started GET "/cable/" [WebSocket] for ::1 at 2019-10-19 12:28:26 +0500
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+RoomChannel is transmitting the subscription confirmation
+RoomChannel is streaming from room_channel
+Started GET "/cable" for ::1 at 2019-10-19 12:28:27 +0500
+Started GET "/cable/" [WebSocket] for ::1 at 2019-10-19 12:28:27 +0500
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+RoomChannel is transmitting the subscription confirmation
+RoomChannel is streaming from room_channel
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mMessage Load (0.2ms)[0m  [1m[34mSELECT "messages".* FROM "messages" LIMIT ?[0m  [["LIMIT", 11]]
+Started GET "/" for ::1 at 2019-10-19 12:30:29 +0500
+Processing by LandingController#index as HTML
+  Rendering landing/index.html.erb within layouts/application
+  Rendered landing/index.html.erb within layouts/application (Duration: 7.9ms | Allocations: 504)
+Completed 200 OK in 51ms (Views: 44.5ms | ActiveRecord: 0.0ms | Allocations: 7105)
+
+
+Finished "/cable/" [WebSocket] for ::1 at 2019-10-19 12:30:29 +0500
+RoomChannel stopped streaming from room_channel
+Started GET "/cable" for ::1 at 2019-10-19 12:30:29 +0500
+Started GET "/cable/" [WebSocket] for ::1 at 2019-10-19 12:30:29 +0500
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+RoomChannel is transmitting the subscription confirmation
+RoomChannel is streaming from room_channel
+Started POST "/messages" for ::1 at 2019-10-19 12:30:33 +0500
+Processing by MessagesController#create as JS
+  Parameters: {"message"=>{"content"=>"b"}, "commit"=>"Create Message"}
+  [1m[35m (0.3ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+  [1m[36mMessage Create (5.8ms)[0m  [1m[32mINSERT INTO "messages" ("content", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["content", "b"], ["created_at", "2019-10-19 07:30:33.041884"], ["updated_at", "2019-10-19 07:30:33.041884"]]
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+  [1m[35m (5.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+[ActionCable] Broadcasting to room_channel: {:content=>"b"}
+RoomChannel transmitting {"content"=>"b"} (via streamed from room_channel)
+RoomChannel transmitting {"content"=>"b"} (via streamed from room_channel)
+No template found for MessagesController#create, rendering head :no_content
+Completed 204 No Content in 65ms (ActiveRecord: 11.8ms | Allocations: 5892)
+
+
+Started POST "/messages" for ::1 at 2019-10-19 12:30:35 +0500
+Processing by MessagesController#create as JS
+  Parameters: {"message"=>{"content"=>"b"}, "commit"=>"Create Message"}
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+  [1m[36mMessage Create (0.6ms)[0m  [1m[32mINSERT INTO "messages" ("content", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["content", "b"], ["created_at", "2019-10-19 07:30:35.574547"], ["updated_at", "2019-10-19 07:30:35.574547"]]
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+  [1m[35m (4.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+[ActionCable] Broadcasting to room_channel: {:content=>"b"}
+No template found for MessagesController#create, rendering head :no_content
+Completed 204 No Content in 17ms (ActiveRecord: 4.9ms | Allocations: 3821)
+
+
+RoomChannel transmitting {"content"=>"b"} (via streamed from room_channel)
+RoomChannel transmitting {"content"=>"b"} (via streamed from room_channel)
+Started POST "/messages" for ::1 at 2019-10-19 12:30:36 +0500
+Processing by MessagesController#create as JS
+  Parameters: {"message"=>{"content"=>"b"}, "commit"=>"Create Message"}
+  [1m[35m (0.4ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+  [1m[36mMessage Create (0.7ms)[0m  [1m[32mINSERT INTO "messages" ("content", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["content", "b"], ["created_at", "2019-10-19 07:30:36.371607"], ["updated_at", "2019-10-19 07:30:36.371607"]]
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+  [1m[35m (7.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+[ActionCable] Broadcasting to room_channel: {:content=>"b"}
+No template found for MessagesController#create, rendering head :no_content
+Completed 204 No Content in 23ms (ActiveRecord: 8.1ms | Allocations: 3832)
+
+
+RoomChannel transmitting {"content"=>"b"} (via streamed from room_channel)
+RoomChannel transmitting {"content"=>"b"} (via streamed from room_channel)
+Started GET "/" for ::1 at 2019-10-19 12:31:46 +0500
+Processing by LandingController#index as HTML
+  Rendering landing/index.html.erb within layouts/application
+  Rendered landing/index.html.erb within layouts/application (Duration: 2.4ms | Allocations: 341)
+[Webpacker] Compiling…
+[Webpacker] Compiled all packs in /home/denis/ruby/RealTimeChat/public/packs
+Completed 200 OK in 3501ms (Views: 3497.6ms | ActiveRecord: 0.0ms | Allocations: 8269)
+
+
+Finished "/cable/" [WebSocket] for ::1 at 2019-10-19 12:31:50 +0500
+RoomChannel stopped streaming from room_channel
+Started GET "/cable" for ::1 at 2019-10-19 12:31:50 +0500
+Started GET "/cable/" [WebSocket] for ::1 at 2019-10-19 12:31:50 +0500
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+RoomChannel is transmitting the subscription confirmation
+RoomChannel is streaming from room_channel
+Started POST "/messages" for ::1 at 2019-10-19 12:31:54 +0500
+Processing by MessagesController#create as JS
+  Parameters: {"message"=>{"content"=>"n"}, "commit"=>"Create Message"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+  [1m[36mMessage Create (1.4ms)[0m  [1m[32mINSERT INTO "messages" ("content", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["content", "n"], ["created_at", "2019-10-19 07:31:54.050359"], ["updated_at", "2019-10-19 07:31:54.050359"]]
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+  [1m[35m (4.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+[ActionCable] Broadcasting to room_channel: {:content=>"n"}
+No template found for MessagesController#create, rendering head :no_content
+RoomChannel transmitting {"content"=>"n"} (via streamed from room_channel)
+Completed 204 No Content in 18ms (ActiveRecord: 5.8ms | Allocations: 3959)
+
+
+RoomChannel transmitting {"content"=>"n"} (via streamed from room_channel)
+Started POST "/messages" for ::1 at 2019-10-19 12:31:54 +0500
+Processing by MessagesController#create as JS
+  Parameters: {"message"=>{"content"=>"n"}, "commit"=>"Create Message"}
+  [1m[35m (0.6ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+  [1m[36mMessage Create (1.3ms)[0m  [1m[32mINSERT INTO "messages" ("content", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["content", "n"], ["created_at", "2019-10-19 07:31:54.894929"], ["updated_at", "2019-10-19 07:31:54.894929"]]
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+  [1m[35m (5.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+[ActionCable] Broadcasting to room_channel: {:content=>"n"}
+No template found for MessagesController#create, rendering head :no_content
+Completed 204 No Content in 20ms (ActiveRecord: 7.3ms | Allocations: 3814)
+
+
+RoomChannel transmitting {"content"=>"n"} (via streamed from room_channel)
+RoomChannel transmitting {"content"=>"n"} (via streamed from room_channel)
+Started POST "/messages" for ::1 at 2019-10-19 12:31:55 +0500
+Processing by MessagesController#create as JS
+  Parameters: {"message"=>{"content"=>"n"}, "commit"=>"Create Message"}
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+  [1m[36mMessage Create (1.2ms)[0m  [1m[32mINSERT INTO "messages" ("content", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["content", "n"], ["created_at", "2019-10-19 07:31:55.554002"], ["updated_at", "2019-10-19 07:31:55.554002"]]
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+  [1m[35m (5.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+[ActionCable] Broadcasting to room_channel: {:content=>"n"}
+No template found for MessagesController#create, rendering head :no_content
+RoomChannel transmitting {"content"=>"n"} (via streamed from room_channel)
+Completed 204 No Content in 24ms (ActiveRecord: 7.0ms | Allocations: 3965)
+
+
+RoomChannel transmitting {"content"=>"n"} (via streamed from room_channel)
+Started GET "/" for ::1 at 2019-10-19 12:31:59 +0500
+Processing by LandingController#index as HTML
+  Rendering landing/index.html.erb within layouts/application
+  Rendered landing/index.html.erb within layouts/application (Duration: 4.3ms | Allocations: 334)
+Completed 200 OK in 47ms (Views: 42.7ms | ActiveRecord: 0.0ms | Allocations: 5995)
+
+
+Finished "/cable/" [WebSocket] for ::1 at 2019-10-19 12:31:59 +0500
+RoomChannel stopped streaming from room_channel
+Started GET "/cable" for ::1 at 2019-10-19 12:31:59 +0500
+Started GET "/cable/" [WebSocket] for ::1 at 2019-10-19 12:31:59 +0500
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+RoomChannel is transmitting the subscription confirmation
+RoomChannel is streaming from room_channel
+Started POST "/messages" for ::1 at 2019-10-19 12:32:04 +0500
+Processing by MessagesController#create as JS
+  Parameters: {"message"=>{"content"=>""}, "commit"=>"Create Message"}
+  [1m[35m (0.3ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+  [1m[36mMessage Create (2.4ms)[0m  [1m[32mINSERT INTO "messages" ("content", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["content", ""], ["created_at", "2019-10-19 07:32:04.408952"], ["updated_at", "2019-10-19 07:32:04.408952"]]
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+  [1m[35m (7.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+[ActionCable] Broadcasting to room_channel: {:content=>""}
+No template found for MessagesController#create, rendering head :no_content
+RoomChannel transmitting {"content"=>""} (via streamed from room_channel)
+RoomChannel transmitting {"content"=>""} (via streamed from room_channel)
+Completed 204 No Content in 40ms (ActiveRecord: 10.2ms | Allocations: 4099)
+
+
+Started POST "/messages" for ::1 at 2019-10-19 12:32:07 +0500
+Processing by MessagesController#create as JS
+  Parameters: {"message"=>{"content"=>"n"}, "commit"=>"Create Message"}
+  [1m[35m (0.3ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+  [1m[36mMessage Create (1.0ms)[0m  [1m[32mINSERT INTO "messages" ("content", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["content", "n"], ["created_at", "2019-10-19 07:32:07.790155"], ["updated_at", "2019-10-19 07:32:07.790155"]]
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+  [1m[35m (5.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+[ActionCable] Broadcasting to room_channel: {:content=>"n"}
+No template found for MessagesController#create, rendering head :no_content
+RoomChannel transmitting {"content"=>"n"} (via streamed from room_channel)
+RoomChannel transmitting {"content"=>"n"} (via streamed from room_channel)
+Completed 204 No Content in 42ms (ActiveRecord: 6.8ms | Allocations: 4096)
+
+
+Started GET "/" for ::1 at 2019-10-19 12:32:10 +0500
+Processing by LandingController#index as HTML
+  Rendering landing/index.html.erb within layouts/application
+  Rendered landing/index.html.erb within layouts/application (Duration: 5.0ms | Allocations: 334)
+Completed 200 OK in 48ms (Views: 44.7ms | ActiveRecord: 0.0ms | Allocations: 5997)
+
+
+Finished "/cable/" [WebSocket] for ::1 at 2019-10-19 12:32:10 +0500
+RoomChannel stopped streaming from room_channel
+Started GET "/cable" for ::1 at 2019-10-19 12:32:10 +0500
+Started GET "/cable/" [WebSocket] for ::1 at 2019-10-19 12:32:10 +0500
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+RoomChannel is transmitting the subscription confirmation
+RoomChannel is streaming from room_channel
+Finished "/cable/" [WebSocket] for ::1 at 2019-10-19 12:32:13 +0500
+RoomChannel stopped streaming from room_channel
+Started GET "/cable" for ::1 at 2019-10-19 12:32:14 +0500
+Started GET "/cable/" [WebSocket] for ::1 at 2019-10-19 12:32:14 +0500
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+RoomChannel is transmitting the subscription confirmation
+RoomChannel is streaming from room_channel
+Started GET "/" for 127.0.0.1 at 2019-10-19 12:32:28 +0500
+Processing by LandingController#index as HTML
+  Rendering landing/index.html.erb within layouts/application
+  Rendered landing/index.html.erb within layouts/application (Duration: 1.6ms | Allocations: 334)
+Completed 200 OK in 9ms (Views: 7.9ms | ActiveRecord: 0.0ms | Allocations: 5942)
+
+
+Started GET "/cable" for 127.0.0.1 at 2019-10-19 12:32:28 +0500
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2019-10-19 12:32:28 +0500
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: keep-alive, Upgrade, HTTP_UPGRADE: websocket)
+RoomChannel is transmitting the subscription confirmation
+RoomChannel is streaming from room_channel
+Started POST "/messages" for ::1 at 2019-10-19 12:32:33 +0500
+Processing by MessagesController#create as JS
+  Parameters: {"message"=>{"content"=>"n"}, "commit"=>"Create Message"}
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+  [1m[36mMessage Create (4.9ms)[0m  [1m[32mINSERT INTO "messages" ("content", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["content", "n"], ["created_at", "2019-10-19 07:32:33.271395"], ["updated_at", "2019-10-19 07:32:33.271395"]]
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+  [1m[35m (5.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+[ActionCable] Broadcasting to room_channel: {:content=>"n"}
+No template found for MessagesController#create, rendering head :no_content
+Completed 204 No Content in 41ms (ActiveRecord: 10.4ms | Allocations: 3869)
+
+
+RoomChannel transmitting {"content"=>"n"} (via streamed from room_channel)
+RoomChannel transmitting {"content"=>"n"} (via streamed from room_channel)
+RoomChannel transmitting {"content"=>"n"} (via streamed from room_channel)
+Started POST "/messages" for ::1 at 2019-10-19 12:32:34 +0500
+Processing by MessagesController#create as JS
+  Parameters: {"message"=>{"content"=>"n"}, "commit"=>"Create Message"}
+  [1m[35m (0.3ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+  [1m[36mMessage Create (1.2ms)[0m  [1m[32mINSERT INTO "messages" ("content", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["content", "n"], ["created_at", "2019-10-19 07:32:34.744585"], ["updated_at", "2019-10-19 07:32:34.744585"]]
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+  [1m[35m (4.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+[ActionCable] Broadcasting to room_channel: {:content=>"n"}
+No template found for MessagesController#create, rendering head :no_content
+RoomChannel transmitting {"content"=>"n"} (via streamed from room_channel)
+RoomChannel transmitting {"content"=>"n"} (via streamed from room_channel)
+Completed 204 No Content in 25ms (ActiveRecord: 5.8ms | Allocations: 4122)
+
+
+RoomChannel transmitting {"content"=>"n"} (via streamed from room_channel)
+Started POST "/messages" for ::1 at 2019-10-19 12:32:35 +0500
+Processing by MessagesController#create as JS
+  Parameters: {"message"=>{"content"=>"n"}, "commit"=>"Create Message"}
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+  [1m[36mMessage Create (2.4ms)[0m  [1m[32mINSERT INTO "messages" ("content", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["content", "n"], ["created_at", "2019-10-19 07:32:35.434869"], ["updated_at", "2019-10-19 07:32:35.434869"]]
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+  [1m[35m (8.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+[ActionCable] Broadcasting to room_channel: {:content=>"n"}
+No template found for MessagesController#create, rendering head :no_content
+RoomChannel transmitting {"content"=>"n"} (via streamed from room_channel)
+Completed 204 No Content in 42ms (ActiveRecord: 10.7ms | Allocations: 4124)
+
+
+RoomChannel transmitting {"content"=>"n"} (via streamed from room_channel)
+RoomChannel transmitting {"content"=>"n"} (via streamed from room_channel)
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2019-10-19 12:37:15 +0500
+RoomChannel stopped streaming from room_channel
+Started GET "/" for 127.0.0.1 at 2019-10-19 12:37:15 +0500
+Processing by LandingController#index as HTML
+  Rendering landing/index.html.erb within layouts/application
+  Rendered landing/index.html.erb within layouts/application (Duration: 2.4ms | Allocations: 503)
+[Webpacker] Compiling…
+[Webpacker] Compiled all packs in /home/denis/ruby/RealTimeChat/public/packs
+Completed 200 OK in 3241ms (Views: 3239.3ms | ActiveRecord: 0.0ms | Allocations: 8911)
+
+
+Started GET "/cable" for 127.0.0.1 at 2019-10-19 12:37:18 +0500
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2019-10-19 12:37:18 +0500
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: keep-alive, Upgrade, HTTP_UPGRADE: websocket)
+RoomChannel is transmitting the subscription confirmation
+RoomChannel is streaming from room_channel
+Started POST "/messages" for 127.0.0.1 at 2019-10-19 12:37:22 +0500
+Processing by MessagesController#create as JS
+  Parameters: {"message"=>{"content"=>"n"}, "commit"=>"Create Message"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+  [1m[36mMessage Create (0.5ms)[0m  [1m[32mINSERT INTO "messages" ("content", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["content", "n"], ["created_at", "2019-10-19 07:37:22.023037"], ["updated_at", "2019-10-19 07:37:22.023037"]]
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+  [1m[35m (4.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+[ActionCable] Broadcasting to room_channel: {:content=>"n"}
+RoomChannel transmitting {"content"=>"n"} (via streamed from room_channel)
+RoomChannel transmitting {"content"=>"n"} (via streamed from room_channel)
+RoomChannel transmitting {"content"=>"n"} (via streamed from room_channel)
+No template found for MessagesController#create, rendering head :no_content
+Completed 204 No Content in 28ms (ActiveRecord: 4.6ms | Allocations: 6171)
+
+
+Started POST "/messages" for 127.0.0.1 at 2019-10-19 12:37:22 +0500
+Processing by MessagesController#create as JS
+  Parameters: {"message"=>{"content"=>"n"}, "commit"=>"Create Message"}
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+  [1m[36mMessage Create (0.5ms)[0m  [1m[32mINSERT INTO "messages" ("content", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["content", "n"], ["created_at", "2019-10-19 07:37:22.807837"], ["updated_at", "2019-10-19 07:37:22.807837"]]
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+  [1m[35m (4.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+[ActionCable] Broadcasting to room_channel: {:content=>"n"}
+No template found for MessagesController#create, rendering head :no_content
+RoomChannel transmitting {"content"=>"n"} (via streamed from room_channel)
+RoomChannel transmitting {"content"=>"n"} (via streamed from room_channel)
+RoomChannel transmitting {"content"=>"n"} (via streamed from room_channel)
+Completed 204 No Content in 16ms (ActiveRecord: 4.9ms | Allocations: 4124)
+
+
+Started POST "/messages" for 127.0.0.1 at 2019-10-19 12:37:23 +0500
+Processing by MessagesController#create as JS
+  Parameters: {"message"=>{"content"=>"n"}, "commit"=>"Create Message"}
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+  [1m[36mMessage Create (2.0ms)[0m  [1m[32mINSERT INTO "messages" ("content", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["content", "n"], ["created_at", "2019-10-19 07:37:23.388439"], ["updated_at", "2019-10-19 07:37:23.388439"]]
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+  [1m[35m (4.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+[ActionCable] Broadcasting to room_channel: {:content=>"n"}
+No template found for MessagesController#create, rendering head :no_content
+RoomChannel transmitting {"content"=>"n"} (via streamed from room_channel)
+RoomChannel transmitting {"content"=>"n"} (via streamed from room_channel)
+RoomChannel transmitting {"content"=>"n"} (via streamed from room_channel)
+Completed 204 No Content in 21ms (ActiveRecord: 6.8ms | Allocations: 4246)
+
+
+Started POST "/messages" for 127.0.0.1 at 2019-10-19 12:37:23 +0500
+Processing by MessagesController#create as JS
+  Parameters: {"message"=>{"content"=>"n"}, "commit"=>"Create Message"}
+  [1m[35m (0.4ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+  [1m[36mMessage Create (3.2ms)[0m  [1m[32mINSERT INTO "messages" ("content", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["content", "n"], ["created_at", "2019-10-19 07:37:23.663943"], ["updated_at", "2019-10-19 07:37:23.663943"]]
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+  [1m[35m (20.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+[ActionCable] Broadcasting to room_channel: {:content=>"n"}
+No template found for MessagesController#create, rendering head :no_content
+RoomChannel transmitting {"content"=>"n"} (via streamed from room_channel)
+RoomChannel transmitting {"content"=>"n"} (via streamed from room_channel)
+Completed 204 No Content in 45ms (ActiveRecord: 23.8ms | Allocations: 4118)
+
+
+RoomChannel transmitting {"content"=>"n"} (via streamed from room_channel)
+Started POST "/messages" for 127.0.0.1 at 2019-10-19 12:37:23 +0500
+Processing by MessagesController#create as JS
+  Parameters: {"message"=>{"content"=>"n"}, "commit"=>"Create Message"}
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+  [1m[36mMessage Create (2.8ms)[0m  [1m[32mINSERT INTO "messages" ("content", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["content", "n"], ["created_at", "2019-10-19 07:37:23.949712"], ["updated_at", "2019-10-19 07:37:23.949712"]]
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+  [1m[35m (5.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+[ActionCable] Broadcasting to room_channel: {:content=>"n"}
+No template found for MessagesController#create, rendering head :no_content
+Completed 204 No Content in 37ms (ActiveRecord: 8.9ms | Allocations: 3846)
+
+
+RoomChannel transmitting {"content"=>"n"} (via streamed from room_channel)
+RoomChannel transmitting {"content"=>"n"} (via streamed from room_channel)
+RoomChannel transmitting {"content"=>"n"} (via streamed from room_channel)
+Started GET "/" for ::1 at 2019-10-19 12:37:28 +0500
+Processing by LandingController#index as HTML
+  Rendering landing/index.html.erb within layouts/application
+  Rendered landing/index.html.erb within layouts/application (Duration: 5.4ms | Allocations: 341)
+Completed 200 OK in 45ms (Views: 41.5ms | ActiveRecord: 0.0ms | Allocations: 6001)
+
+
+Finished "/cable/" [WebSocket] for ::1 at 2019-10-19 12:37:28 +0500
+RoomChannel stopped streaming from room_channel
+Started GET "/cable" for ::1 at 2019-10-19 12:37:28 +0500
+Started GET "/cable/" [WebSocket] for ::1 at 2019-10-19 12:37:28 +0500
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+RoomChannel is transmitting the subscription confirmation
+RoomChannel is streaming from room_channel
+Started POST "/messages" for ::1 at 2019-10-19 12:37:33 +0500
+Processing by MessagesController#create as JS
+  Parameters: {"message"=>{"content"=>"n"}, "commit"=>"Create Message"}
+  [1m[35m (0.3ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+  [1m[36mMessage Create (1.5ms)[0m  [1m[32mINSERT INTO "messages" ("content", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["content", "n"], ["created_at", "2019-10-19 07:37:33.349711"], ["updated_at", "2019-10-19 07:37:33.349711"]]
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+  [1m[35m (6.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+[ActionCable] Broadcasting to room_channel: {:content=>"n"}
+No template found for MessagesController#create, rendering head :no_content
+Completed 204 No Content in 42ms (ActiveRecord: 8.2ms | Allocations: 3818)
+
+
+RoomChannel transmitting {"content"=>"n"} (via streamed from room_channel)
+RoomChannel transmitting {"content"=>"n"} (via streamed from room_channel)
+RoomChannel transmitting {"content"=>"n"} (via streamed from room_channel)
+Started POST "/messages" for ::1 at 2019-10-19 12:37:34 +0500
+Processing by MessagesController#create as JS
+  Parameters: {"message"=>{"content"=>"n"}, "commit"=>"Create Message"}
+  [1m[35m (0.3ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+  [1m[36mMessage Create (2.6ms)[0m  [1m[32mINSERT INTO "messages" ("content", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["content", "n"], ["created_at", "2019-10-19 07:37:34.422618"], ["updated_at", "2019-10-19 07:37:34.422618"]]
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+  [1m[35m (7.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+[ActionCable] Broadcasting to room_channel: {:content=>"n"}
+No template found for MessagesController#create, rendering head :no_content
+Completed 204 No Content in 38ms (ActiveRecord: 10.5ms | Allocations: 3848)
+
+
+RoomChannel transmitting {"content"=>"n"} (via streamed from room_channel)
+RoomChannel transmitting {"content"=>"n"} (via streamed from room_channel)
+RoomChannel transmitting {"content"=>"n"} (via streamed from room_channel)
+Started POST "/messages" for ::1 at 2019-10-19 12:37:34 +0500
+Processing by MessagesController#create as JS
+  Parameters: {"message"=>{"content"=>"n"}, "commit"=>"Create Message"}
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+  [1m[36mMessage Create (4.2ms)[0m  [1m[32mINSERT INTO "messages" ("content", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["content", "n"], ["created_at", "2019-10-19 07:37:34.603050"], ["updated_at", "2019-10-19 07:37:34.603050"]]
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+  [1m[35m (6.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+[ActionCable] Broadcasting to room_channel: {:content=>"n"}
+No template found for MessagesController#create, rendering head :no_content
+Completed 204 No Content in 35ms (ActiveRecord: 10.6ms | Allocations: 3851)
+
+
+RoomChannel transmitting {"content"=>"n"} (via streamed from room_channel)
+RoomChannel transmitting {"content"=>"n"} (via streamed from room_channel)
+RoomChannel transmitting {"content"=>"n"} (via streamed from room_channel)
+Started POST "/messages" for ::1 at 2019-10-19 12:37:36 +0500
+Processing by MessagesController#create as JS
+  Parameters: {"message"=>{"content"=>"n"}, "commit"=>"Create Message"}
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+  [1m[36mMessage Create (1.1ms)[0m  [1m[32mINSERT INTO "messages" ("content", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["content", "n"], ["created_at", "2019-10-19 07:37:36.286054"], ["updated_at", "2019-10-19 07:37:36.286054"]]
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+  [1m[35m (8.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+[ActionCable] Broadcasting to room_channel: {:content=>"n"}
+No template found for MessagesController#create, rendering head :no_content
+Completed 204 No Content in 37ms (ActiveRecord: 9.4ms | Allocations: 3839)
+
+
+RoomChannel transmitting {"content"=>"n"} (via streamed from room_channel)
+RoomChannel transmitting {"content"=>"n"} (via streamed from room_channel)
+RoomChannel transmitting {"content"=>"n"} (via streamed from room_channel)
+Started POST "/messages" for ::1 at 2019-10-19 12:37:37 +0500
+Processing by MessagesController#create as JS
+  Parameters: {"message"=>{"content"=>"n"}, "commit"=>"Create Message"}
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+  [1m[36mMessage Create (4.9ms)[0m  [1m[32mINSERT INTO "messages" ("content", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["content", "n"], ["created_at", "2019-10-19 07:37:37.249616"], ["updated_at", "2019-10-19 07:37:37.249616"]]
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+  [1m[35m (7.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+[ActionCable] Broadcasting to room_channel: {:content=>"n"}
+No template found for MessagesController#create, rendering head :no_content
+Completed 204 No Content in 40ms (ActiveRecord: 13.1ms | Allocations: 3995)
+
+
+RoomChannel transmitting {"content"=>"n"} (via streamed from room_channel)
+RoomChannel transmitting {"content"=>"n"} (via streamed from room_channel)
+RoomChannel transmitting {"content"=>"n"} (via streamed from room_channel)
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2019-10-19 12:42:05 +0500
+RoomChannel stopped streaming from room_channel
+Finished "/cable/" [WebSocket] for ::1 at 2019-10-19 12:42:05 +0500
+RoomChannel stopped streaming from room_channel
+Started GET "/cable" for ::1 at 2019-10-19 12:42:06 +0500
+Started GET "/cable/" [WebSocket] for ::1 at 2019-10-19 12:42:06 +0500
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+RoomChannel is transmitting the subscription confirmation
+RoomChannel is streaming from room_channel
+Started GET "/cable" for 127.0.0.1 at 2019-10-19 12:42:06 +0500
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2019-10-19 12:42:06 +0500
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: keep-alive, Upgrade, HTTP_UPGRADE: websocket)
+RoomChannel is transmitting the subscription confirmation
+RoomChannel is streaming from room_channel
