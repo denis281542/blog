@@ -1,0 +1,66 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Items</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Description</th>
+      <th>Price</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @items.each do |item| %>
+      <tr>
+        <td><%= item.title %></td>
+        <td><%= item.description %></td>
+        <td><%= item.price %></td>
+        <td><%= item.image %></td>
+        <td><%= button_to 'Show', item, class: "inbox-sf-add-btn tip" %></td>
+        <td><%= button_to 'Edit', edit_item_path(item), class: "inbox-sf-add-btn tip" %></td>
+        <td><%= button_to 'Destroy', item, class: "inbox-sf-add-btn tip", method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<!-- Сarousel -->
+    <%= render 'layouts/carousel' %>
+
+<%= button_to "New Item", new_item_path, :id => "open-contacts-dialog-btn", class: "inbox-sf-add-btn tip", method: :get %>
+
+<%= button_to "Sing out", destroy_user_session_path, class: "inbox-sf-add-btn tip", method: :delete %>
+
+
+<%= button_to "React", react_index_path, class: "inbox-sf-add-btn tip", method: :get %>
+
+
+<%= form_tag charges_path do %>
+  <article>
+    <% if flash[:error].present? %>
+      <div id="error_explanation">
+        <p><%= flash[:error] %></p>
+      </div>
+    <% end %>
+    </article>
+
+  <script src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+          data-key="<%= Rails.configuration.stripe[:pk_test_PftUrNnWeOIvbCegQqhtS17r004JBuQgNY] %>"
+          data-description="A month's subscription"
+          data-amount="500"
+          data-locale="auto"></script>
+<% end %>
+
+<!-- Card group -->
+    <%= render 'layouts/card_group' %>
+
+<!-- Preview video -->
+    <%= render 'layouts/preview_video' %>
+
+<!-- Button toolbar -->
+    <%= render 'layouts/button_toolbar' %>
